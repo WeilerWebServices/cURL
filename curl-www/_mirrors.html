@@ -1,0 +1,30 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - list of mirrors</TITLE>
+#include "css.t"
+</HEAD>
+
+#define CURL_URL mirrors.html
+#define CURL_SUB Mirrors
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE2(Download, "/download.html", Mirrors)
+
+TITLE(Curl Mirrors)
+<p>
+ We provide download files from a number of mirrors spread out over the globe.
+
+<p> Try the <a href="//curl.se/latest.cgi">recent archives</a> page
+to pick your favorite curl archive from a mirror we know has it!
+
+<p>
+  <b>If you run or plan to run a mirror not mentioned here, please let <a
+  href="mailto:curl-web_at_haxx.se">us</a> know!</b>. Mirroring info and tools
+  are <a href="/mirror/">here</a>.
+
+#include "_footer.html"
+
+</BODY>
+</HTML>

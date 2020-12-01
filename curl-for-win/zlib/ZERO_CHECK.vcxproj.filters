@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\cb13d3145b31a637077dc58eb5129dda\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BC235381-A3DF-3A43-9576-6677036D6E0A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

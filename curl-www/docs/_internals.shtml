@@ -1,0 +1,27 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - Internal Design</TITLE>
+#include "css.t"
+</HEAD>
+
+#define CURL_DOCS
+#define DOCS_INTERNALS
+
+#define CURL_URL docs/internals.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE2(Docs, "/docs/", Internals)
+
+TITLE(INTERNALS -- how things work inside)
+
+<pre>
+#include "internals.t"
+</pre>
+
+#include "_footer.html"
+
+</BODY>
+</HTML>
+

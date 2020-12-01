@@ -1,0 +1,273 @@
+#!/bin/sh -ex
+
+# Copyright 2014-present Viktor Szakats <https://vsz.me/>
+# See LICENSE.md
+
+export _NAM
+export _VER
+export _BAS
+export _DST
+
+_NAM="$(basename "$0")"
+_NAM="$(echo "${_NAM}" | cut -f 1 -d '.')"
+_VER="$1"
+_cpu="$2"
+
+(
+  cd "${_NAM}" || exit
+
+  # Prepare build
+
+  find . -name '*.dll' -delete
+  find . -name '*.def' -delete
+
+  if [ ! -f 'Makefile' ]; then
+    if [ "${_OS}" = 'win' ]; then
+      # FIXME: This will not create a fully release-compliant file tree,
+      #        e.g. documentation will be incomplete.
+      ./buildconf.bat
+    else
+      # FIXME: Replace this with `./buildconf` call
+      cp -f -p Makefile.dist Makefile
+    fi
+  fi
+
+  # Build
+
+  options='mingw32-ipv6-sspi-ldaps-srp'
+
+  export ARCH="w${_cpu}"
+  # Use -DCURL_STATICLIB when compiling libcurl. This option prevents
+  # public libcurl functions being marked as 'exported'. It is useful to
+  # avoid the chance of libcurl functions getting exported from final
+  # binaries when linked against static libcurl lib.
+  export CURL_CFLAG_EXTRAS='-DCURL_STATICLIB -DCURL_ENABLE_MQTT -fno-ident -DHAVE_ATOMIC -DUSE_HSTS'
+  [ "${_cpu}" = '32' ] && CURL_CFLAG_EXTRAS="${CURL_CFLAG_EXTRAS} -fno-asynchronous-unwind-tables"
+  export CURL_LDFLAG_EXTRAS='-static-libgcc -Wl,--nxcompat -Wl,--dynamicbase'
+  export CURL_LDFLAG_EXTRAS_EXE
+  export CURL_LDFLAG_EXTRAS_DLL
+  if [ "${_cpu}" = '32' ]; then
+    CURL_LDFLAG_EXTRAS_EXE='-Wl,--pic-executable,-e,_mainCRTStartup'
+  else
+    CURL_LDFLAG_EXTRAS_EXE='-Wl,--pic-executable,-e,mainCRTStartup'
+    CURL_LDFLAG_EXTRAS_DLL='-Wl,--image-base,0x150000000'
+    CURL_LDFLAG_EXTRAS="${CURL_LDFLAG_EXTRAS} -Wl,--high-entropy-va"
+  fi
+
+  CURL_CFLAG_EXTRAS="${CURL_CFLAG_EXTRAS} -DUNICODE -D_UNICODE"
+  CURL_LDFLAG_EXTRAS_EXE="${CURL_LDFLAG_EXTRAS_EXE} -municode"
+
+  if [ "${_BRANCH#*master*}" = "${_BRANCH}" ]; then
+    CURL_LDFLAG_EXTRAS_EXE="${CURL_LDFLAG_EXTRAS_EXE} -Wl,-Map,curl.map"
+    CURL_LDFLAG_EXTRAS_DLL="${CURL_LDFLAG_EXTRAS_DLL} -Wl,-Map,libcurl.map"
+  fi
+
+  # Generate .def file for libcurl by parsing curl headers.
+  # Useful to limit .dll exports to libcurl functions meant to be exported.
+  # Without this, the default linker logic kicks in, whereas every public
+  # function is exported if none is marked for export explicitly. This
+  # leads to exporting every libcurl public function, as well as any other
+  # ones from statically linked dependencies, resulting in a larger .dll,
+  # an inflated implib and a non-standard list of exported functions.
+  echo 'EXPORTS' > libcurl.def
+  {
+    # CURL_EXTERN CURLcode curl_easy_send(CURL *curl, const void *buffer,
+    grep -a -h '^CURL_EXTERN ' include/curl/*.h | grep -a -h -F '(' \
+      | sed 's/CURL_EXTERN \([a-zA-Z_\* ]*\)[\* ]\([a-z_]*\)(\(.*\)$/\2/g'
+    # curl_easy_option_by_name(const char *name);
+    grep -a -h -E '^ *\*? *[a-z_]+ *\(.+\);$' include/curl/*.h \
+      | sed -E 's|^ *\*? *([a-z_]+) *\(.+$|\1|g'
+  } | grep -a -v '^$' | sort | tee -a libcurl.def
+  CURL_LDFLAG_EXTRAS_DLL="${CURL_LDFLAG_EXTRAS_DLL} ../libcurl.def"
+
+  export ZLIB_PATH=../../zlib/pkg/usr/local
+  options="${options}-zlib"
+  if [ -d ../brotli ]; then
+    options="${options}-brotli"
+    export BROTLI_PATH=../../brotli/pkg/usr/local
+    export BROTLI_LIBS='-Wl,-Bstatic -lbrotlidec-static -lbrotlicommon-static -Wl,-Bdynamic'
+  fi
+  if [ -d ../zstd ]; then
+    options="${options}-zstd"
+    export ZSTD_PATH=../../zstd/build/cmake/pkg/usr/local
+    export ZSTD_LIBS='-Wl,-Bstatic -lzstd -Wl,-Bdynamic'
+  fi
+
+  [ -d ../openssl ] && export OPENSSL_PATH=../../openssl
+  if [ -n "${OPENSSL_PATH}" ]; then
+    CURL_CFLAG_EXTRAS="${CURL_CFLAG_EXTRAS} -DCURL_DISABLE_OPENSSL_AUTO_LOAD_CONFIG"
+    # Apply a workaround for deprecation warnings from the curl autoconf logic
+    if [ "$(echo "${OPENSSL_VER_}" | cut -c -2)" = '3.' ]; then
+      CURL_CFLAG_EXTRAS="${CURL_CFLAG_EXTRAS} -DOPENSSL_SUPPRESS_DEPRECATED"
+    fi
+    options="${options}-ssl"
+    export OPENSSL_INCLUDE="${OPENSSL_PATH}/include"
+    export OPENSSL_LIBPATH="${OPENSSL_PATH}"
+    export OPENSSL_LIBS='-lssl -lcrypto'
+  fi
+  options="${options}-winssl"
+  if [ -d ../libssh2 ]; then
+    options="${options}-ssh2"
+    export LIBSSH2_PATH=../../libssh2
+  fi
+  if [ -d ../nghttp2 ]; then
+    options="${options}-nghttp2"
+    export NGHTTP2_PATH=../../nghttp2/pkg/usr/local
+    CURL_CFLAG_EXTRAS="${CURL_CFLAG_EXTRAS} -DNGHTTP2_STATICLIB"
+  fi
+  if [ -d ../nghttp3 ]; then
+    options="${options}-nghttp3-ngtcp2"
+    export NGHTTP3_PATH=../../nghttp3/pkg/usr/local
+    CURL_CFLAG_EXTRAS="${CURL_CFLAG_EXTRAS} -DNGHTTP3_STATICLIB"
+    export NGTCP2_PATH=../../ngtcp2/pkg/usr/local
+    CURL_CFLAG_EXTRAS="${CURL_CFLAG_EXTRAS} -DNGTCP2_STATICLIB"
+    # TODO: Remove with curl 7.74.0
+    CURL_CFLAG_EXTRAS="${CURL_CFLAG_EXTRAS} -DUSE_ALTSVC=1"
+  fi
+  if [ -d ../c-ares ]; then
+    options="${options}-ares"
+    export LIBCARES_PATH=../../c-ares/pkg/usr/local
+  fi
+  if [ -d ../libidn2 ]; then
+    options="${options}-idn2"
+    export LIBIDN2_PATH=../../libidn2/pkg/usr/local
+  else
+    options="${options}-winidn"
+  fi
+
+  if [ "${_cpu}" = '64' ]; then
+    export CURL_DLL_SUFFIX=-x64
+  fi
+  export CURL_DLL_A_SUFFIX=.dll
+
+  # Make sure to link zlib (and only zlib) in static mode when building
+  # `libcurl.dll`, so that it wouldn't depend on a `zlib1.dll`.
+  # In some build environments (such as MSYS2), `libz.dll.a` is also offered
+  # along with `libz.a` causing the linker to pick up the shared library.
+  export DLL_LIBS='-Wl,-Bstatic -lz -Wl,-Bdynamic'
+
+  # Link libssh2 to libcurl in static mode as well.
+  # Use a hack: Delete the implib
+  rm -f "../libssh2/win32/libssh2.dll.a"
+
+  export CROSSPREFIX="${_CCPREFIX}"
+
+  if [ "${CC}" = 'mingw-clang' ]; then
+    export CURL_CC="clang${_CCSUFFIX}"
+    if [ "${_OS}" != 'win' ]; then
+      CURL_CFLAG_EXTRAS="-target ${_TRIPLET} --sysroot ${_SYSROOT} ${CURL_CFLAG_EXTRAS}"
+      [ "${_OS}" = 'linux' ] && CURL_LDFLAG_EXTRAS="-L$(find "/usr/lib/gcc/${_TRIPLET}" -name '*posix' | head -n 1) ${CURL_LDFLAG_EXTRAS}"
+      CURL_LDFLAG_EXTRAS="-target ${_TRIPLET} --sysroot ${_SYSROOT} ${CURL_LDFLAG_EXTRAS}"
+    fi
+    # This doesn't work yet, due to:
+    #   /usr/local/bin/x86_64-w64-mingw32-ld: asyn-thread.o:asyn-thread.c:(.rdata$.refptr.__guard_dispatch_icall_fptr[.refptr.__guard_dispatch_icall_fptr]+0x0): undefined reference to `__guard_dispatch_icall_fptr'
+  # CURL_CFLAG_EXTRAS="${CURL_CFLAG_EXTRAS} -Xclang -cfguard"
+  # CURL_LDFLAG_EXTRAS="${CURL_LDFLAG_EXTRAS} -Xlinker -guard:cf"
+  fi
+
+  ${_MAKE} -j 2 mingw32-clean
+  ${_MAKE} -j 2 "${options}"
+
+  # Download CA bundle
+  [ -f '../ca-bundle.crt' ] || \
+    curl --fail --silent --show-error --remote-time --xattr \
+      --output '../ca-bundle.crt' \
+      'https://curl.se/ca/cacert.pem'
+
+  openssl dgst -sha256 '../ca-bundle.crt'
+  openssl dgst -sha512 '../ca-bundle.crt'
+
+  # Make steps for determinism
+
+  readonly _ref='CHANGES'
+
+  "${_CCPREFIX}strip" --preserve-dates --strip-debug --enable-deterministic-archives lib/*.a
+
+  ../_peclean.py "${_ref}" src/*.exe
+  ../_peclean.py "${_ref}" lib/*.dll
+
+  ../_signcode.sh "${_ref}" src/*.exe
+  ../_signcode.sh "${_ref}" lib/*.dll
+
+  touch -c -r "${_ref}" src/*.exe
+  touch -c -r "${_ref}" lib/*.dll
+  touch -c -r "${_ref}" lib/*.def
+  touch -c -r "${_ref}" lib/*.a
+
+  if [ "${_BRANCH#*master*}" = "${_BRANCH}" ]; then
+    touch -c -r "${_ref}" src/*.map
+    touch -c -r "${_ref}" lib/*.map
+  fi
+
+  # Tests
+
+  "${_CCPREFIX}objdump" --all-headers src/*.exe | grep -a -E -i "(file format|dll name)"
+  "${_CCPREFIX}objdump" --all-headers lib/*.dll | grep -a -E -i "(file format|dll name)"
+
+  ${_WINE} src/curl.exe --version
+
+  # Create package
+
+  _BAS="${_NAM}-${_VER}${_REV}-win${_cpu}-mingw"
+  [ -d ../brotli ] || _BAS="${_BAS}-nobrotli"
+  _DST="$(mktemp -d)/${_BAS}"
+
+  mkdir -p "${_DST}/docs/libcurl/opts"
+  mkdir -p "${_DST}/include/curl"
+  mkdir -p "${_DST}/lib"
+  mkdir -p "${_DST}/bin"
+
+  (
+    set +x
+    for file in docs/*; do
+      if [ -f "${file}" ] && echo "${file}" | grep -q -a -v -F '.'; then
+        cp -f -p "${file}" "${_DST}/${file}.txt"
+      fi
+    done
+    for file in docs/libcurl/*; do
+      if [ -f "${file}" ] && echo "${file}" | grep -q -a -v -F '.'; then
+        cp -f -p "${file}" "${_DST}/${file}.txt"
+      fi
+    done
+  )
+  cp -f -p docs/*.md                "${_DST}/docs/"
+  cp -f -p include/curl/*.h         "${_DST}/include/curl/"
+  cp -f -p src/*.exe                "${_DST}/bin/"
+  cp -f -p lib/*.dll                "${_DST}/bin/"
+  cp -f -p lib/*.def                "${_DST}/bin/"
+  cp -f -p lib/*.a                  "${_DST}/lib/"
+  cp -f -p lib/mk-ca-bundle.pl      "${_DST}/"
+  cp -f -p CHANGES                  "${_DST}/CHANGES.txt"
+  cp -f -p COPYING                  "${_DST}/COPYING.txt"
+  cp -f -p README                   "${_DST}/README.txt"
+  cp -f -p RELEASE-NOTES            "${_DST}/RELEASE-NOTES.txt"
+  cp -f -p ../ca-bundle.crt         "${_DST}/bin/curl-ca-bundle.crt"
+
+  [ -d ../zlib ]     && cp -f -p ../zlib/README     "${_DST}/COPYING-zlib.txt"
+  [ -d ../zstd ]     && cp -f -p ../zstd/LICENSE    "${_DST}/COPYING-zstd.txt"
+  [ -d ../brotli ]   && cp -f -p ../brotli/LICENSE  "${_DST}/COPYING-brotli.txt"
+  [ -d ../libssh2 ]  && cp -f -p ../libssh2/COPYING "${_DST}/COPYING-libssh2.txt"
+  [ -d ../nghttp2 ]  && cp -f -p ../nghttp2/COPYING "${_DST}/COPYING-nghttp2.txt"
+  [ -d ../nghttp3 ]  && cp -f -p ../nghttp3/COPYING "${_DST}/COPYING-nghttp3.txt"
+  [ -d ../ngtcp2 ]   && cp -f -p ../ngtcp2/COPYING  "${_DST}/COPYING-ngtcp2.txt"
+  [ -d ../libidn2 ]  && cp -f -p ../libidn2/COPYING "${_DST}/COPYING-libidn2.txt"
+  if [ -d ../cares ]; then
+    cp -f -p ../c-ares/LICENSE.md "${_DST}/COPYING-c-ares.md"
+    unix2dos --quiet --keepdate "${_DST}"/*.md
+  fi
+  # OpenSSL 3.x
+  [ -d ../openssl ] && [ -f ../openssl/LICENSE.txt ] && cp -f -p ../openssl/LICENSE.txt "${_DST}/COPYING-openssl.txt"
+  # OpenSSL 1.x
+  [ -d ../openssl ] && [ -f ../openssl/LICENSE     ] && cp -f -p ../openssl/LICENSE     "${_DST}/COPYING-openssl.txt"
+
+  if [ "${_BRANCH#*master*}" = "${_BRANCH}" ]; then
+    cp -f -p src/*.map                "${_DST}/bin/"
+    cp -f -p lib/*.map                "${_DST}/bin/"
+  fi
+
+  unix2dos --quiet --keepdate "${_DST}"/*.txt
+  unix2dos --quiet --keepdate "${_DST}"/docs/*.md
+  unix2dos --quiet --keepdate "${_DST}"/docs/*.txt
+
+  ../_pack.sh "$(pwd)/${_ref}"
+)

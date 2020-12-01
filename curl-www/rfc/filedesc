@@ -1,0 +1,149 @@
+cookie_spec.html Netscape's cookie specification
+rfc0822.txt Arpa Internet Text Messages (mostly for the date format)
+rfc0850.txt Interchange of USENET Messages (mostly for the date format) 
+rfc0959.txt File Transfer Protocol (FTP)
+rfc1036.txt Interchange of USENET Messages (mostly for the date format)
+rfc1123.txt Requirements for Internet Hosts
+rfc1350.txt The TFTP Protocol (Revision 2)
+rfc1635.txt How to Use Anonymous FTP
+rfc1639.txt FTP Operation Over Big Address Records (FOOBAR)
+rfc1738.txt Uniform Resource Locators (updated by RFC2396)
+rfc1777.txt Lightweight Directory Access Protocol
+rfc1808.txt Relative Uniform Resource Locators (updated by RFC2396)
+rfc1867.txt Form-based File Upload in HTML
+rfc1884.txt IP Version 6 Addressing Architecture (obsolete)
+rfc1928.txt SOCKS Protocol Version 5
+rfc1945.txt Hypertext Transfer Protocol -- HTTP/1.0
+rfc1950.txt ZLIB Compressed Data Format Specification
+rfc1951.txt DEFLATE Compressed Data Format Specification
+rfc1952.txt gzip compression format
+rfc1959.txt LDAP URL Format (obsoleted by RFC 2255)
+rfc2045.txt (MIME) Part One: Format of Internet Message Bodies
+rfc2046.txt (MIME) Part Two: Media Types
+rfc2047.txt (MIME) Part Three: Message Header Extensions for Non-ASCII Text
+rfc2048.txt (MIME) Part Four: Registration Procedures
+rfc2049.txt (MIME) Part Five: Conformance Criteria and Examples
+rfc2068.txt Hypertext Transfer Protocol -- HTTP 1.1 (obsoleted by RFC 2616)
+rfc2109.txt HTTP State Management Mechanism (obsoleted by RFC 2964)
+rfc2183.txt The Content-Disposition Header Field
+rfc2184.txt MIME Parameter Value and Encoded Word Extensions
+rfc2228.txt FTP Security Extensions
+rfc2229.txt A Dictionary Server Protocol
+rfc2231.txt MIME Parameter Value and Encoded Word Extensions:  Character Sets, Languages, and Continuations
+rfc2246.txt The TLS Protocol
+rfc2255.txt LDAP URL Format (obsoleted by RFC 4516)
+rfc2326.txt Real Time Streaming Protocol (RTSP)
+rfc2373.txt IP Version 6 Addressing Architecture (obsolete)
+rfc2388.txt Returning Values from Forms: multipart/form-data (Obsoleted by RFC7578)
+rfc2389.txt Feature negotiation mechanism for FTP
+rfc2396.txt Uniform Resource Identifiers: Generic Syntax (see RFC3986)
+rfc2428.txt FTP Extensions for IPv6 and NATs
+rfc2459.txt Internet X.509 Public Key Infrastructure Certificate and CRL Profile
+rfc2518.txt HTTP Extensions for Distributed Authoring -- WEBDAV
+rfc2577.txt FTP Security Considerations
+rfc2616.txt Hypertext Transfer Protocol -- HTTP 1.1 (obsoleted by RFC7230)
+rfc2617.txt HTTP Authentication
+rfc2640.txt Internationalization of FTP
+rfc2718.txt Guidelines for new URL Schemes
+rfc2732.txt Format for Literal IPv6 Addresses in URL's
+rfc2817.txt Upgrading to TLS Within HTTP/1.1
+rfc2818.txt HTTP Over TLS (TLS is the successor to SSL)
+rfc2936.txt HTTP MIME Type Handler Detection
+rfc2964.txt Use of HTTP State Management
+rfc2965.txt HTTP State Management Mechanism. Cookies. (Obsoletes RFC2109)
+rfc3280.txt Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile
+rfc3513.txt IP Version 6 Addressing Architecture
+rfc3617.txt Uniform Resource Identifier (URI) Scheme for TFTP
+draft-murray-auth-ftp-ssl-16.txt Securing FTP with TLS (Obsoleted by RFC4217)
+ntlm.html Eric Glass' NTLM Authentication Protocol specification
+draft-brezak-spnego-http-04.txt SPNEGO Access Authentication
+draft-luotonen-web-proxy-tunneling-01.txt Tunneling TCP based protocols through Web proxy servers
+rfc4217.txt Securing FTP with TLS
+rfc3986.txt Uniform Resource Identifier (URI): Generic Syntax
+rfc2854.txt The 'text/html' Media Type
+rfc4248.txt The telnet URI Scheme
+rfc4346.txt TLS/1.1 (obsoletes RFC 2246)
+rfc4366.txt TLS Extensions (server name, client certificate URLs, etc.)
+rfc3493.txt Basic Socket Interface Extensions for IPv6
+rfc2553.txt Basic Socket Interface Extensions for IPv6 (see RFC3493)
+rfc2133.txt Basic Socket Interface Extensions for IPv6 (see RFC3493)
+rfc4516.txt LDAP Uniform Resource Locator (obsoletes RFC 2255)
+draft-ietf-secsh-scp-sftp-ssh-uri-04.txt Uniform Resource Identifier (URI) Scheme for Secure File Transfer Protocol (SFTP) and Secure Shell (SSH)
+rfc3659.txt Extensions to FTP
+rfc0821.txt Simple Mail Transfer Protocol (obsoleted by RFC2821)
+rfc0974.txt Mail Routing And The Domain System (obsoleted by RFC2821) 
+rfc1425.txt SMTP Service Extensions (obsoleted by RFC1651)
+rfc1427.txt SMTP Service Extension for Message Size Declaration (obsoleted by RFC1653)
+rfc1651.txt SMTP Service Extensions (obsoleted by RFC1869)
+rfc1653.txt SMTP Service Extension for Message Size Declaration (obsoleted by RFC1870) 
+rfc1869.txt SMTP Service Extensions (obsoleted by RFC2821)
+rfc1870.txt SMTP Service Extension for Message Size Declaration (obsoletes RFC1653)
+rfc2821.txt Simple Mail Transfer Protocol (obsoletes RFC821, RFC974, RFC1869)
+rfc2487.txt SMTP Service Extension for Secure SMTP over TLS (obsoleted by RFC3207)
+rfc2554.txt SMTP Service Extension for Authentication (obsoleted by RFC4954) 
+rfc3207.txt SMTP Service Extension for Secure SMTP over Transport Layer Security (obsoletes RFC2487)
+rfc4954.txt SMTP Service Extension for Authentication (obsoletes RFC2554)
+rfc5321.txt Simple Mail Transfer Protocol (obsoletes RFC2821)
+draft-earhart-url-smtp-00.txt An SMTP URL Interface (expired)
+rfc1081.txt Post Office Protocol - Version 3 (obsoleted by RFC1225) 
+rfc1225.txt Post Office Protocol - Version 3 (obsoleted by RFC1460)
+rfc1460.txt Post Office Protocol - Version 3 (obsoleted by RFC1725)
+rfc1725.txt Post Office Protocol - Version 3 (obsoleted by RFC1939)
+rfc1734.txt POP3 AUTHentication command (obsoleted by RFC5034)
+rfc1939.txt Post Office Protocol - Version 3
+rfc2384.txt POP URL Scheme
+rfc2449.txt POP3 Extension Mechanism
+rfc2595.txt Using TLS with IMAP, POP3 and ACAP
+rfc5034.txt The Post Office Protocol (POP3) Simple Authentication and Security Layer (SASL) Authentication Mechanism (obsoletes RFC1734)
+rfc1730.txt Internet Message Access Protocol - Version 4 (obsoleted by RFC2060, RFC2061)
+rfc2060.txt Internet Message Access Protocol - Version 4rev1 (obsoleted by RFC1730)
+rfc2061.txt IMAP4 Compatibility With Imap2Bis (obsoletes RFC1730)
+rfc2192.txt IMAP URL Scheme (obsoleted by RFC5092)
+rfc3501.txt Internet Message Access Protocol - Version 4rev1 (obsoletes RFC2060)
+rfc4959.txt IMAP Extension for Simple Authentication and Security Layer (SASL) Initial Client Response
+rfc5092.txt IMAP URL Scheme (obsoletes RFC2192)
+rfc2095.txt IMAP/POP AUTHorize Extension for Simple Challenge/Response (obsoleted by RFC2195)
+rfc2195.txt IMAP/POP AUTHorize Extension for Simple Challenge/Response (obsoletes RFC2095)
+rfc2222.txt Simple Authentication and Security Layer (SASL) (obsoleted by RFC4422)
+rfc2831.txt Using Digest Authentication as a SASL Mechanism (historic by RFC6331)
+rfc4422.txt Simple Authentication and Security Layer (SASL) (obsoletes RFC2222)
+rfc4616.txt The PLAIN Simple Authentication and Security Layer (SASL) Mechanism
+rfc5849.txt The OAuth 1.0 Protocol (obsoleted by RFC6749)
+rfc6749.txt The OAuth 2.0 Authorization Framework (obsoletes RFC5849)
+draft-murchison-sasl-login-00.txt The LOGIN SASL Mechanism (expired)
+rfc2145.txt Use and Interpretation of HTTP Version Numbers (obsoleted by RFC7230)
+rfc7230.txt Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing (obsoletes RFC2145, RFC2616)
+rfc7231.txt Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content (obsoletes RFC2616)
+rfc7232.txt Hypertext Transfer Protocol (HTTP/1.1): Conditional Requests (obsoletes RFC2616)
+rfc7233.txt Hypertext Transfer Protocol (HTTP/1.1): Range Requests (obsoletes RFC2616)
+rfc7234.txt Hypertext Transfer Protocol (HTTP/1.1): Caching (obsoletes RFC2616)
+rfc7235.txt Hypertext Transfer Protocol (HTTP/1.1): Authentication (obsoletes RFC2616)
+rfc7628.txt A Set of Simple Authentication and Security Layer (SASL) Mechanisms for OAuth
+rfc2478.txt The Simple and Protected GSS-API Negotiation Mechanism (obsoleted by RFC4178)
+rfc4178.txt The Simple and Protected Generic Security Service Application Program Interface (GSS-API) Negotiation Mechanism (obsoletes RFC2478)
+rfc4559.txt SPNEGO-based Kerberos and NTLM HTTP Authentication in Microsoft Windows
+rfc1510.txt The Kerberos Network Authentication Service (V5) (obsoleted by RFC4120)
+rfc1964.txt The Kerberos Version 5 GSS-API Mechanism
+rfc3961.txt Encryption and Checksum Specifications for Kerberos 5
+rfc4120.txt The Kerberos Network Authentication Service (V5) (obsoletes RFC1510)
+rfc4121.txt The Kerberos Version 5 Generic Security Service Application Program Interface (GSS-API) Mechanism: Version 2
+rfc2104.txt HMAC: Keyed-Hashing for Message Authentication
+rfc7578.txt Returning Values from Forms: multipart/form-data (obsoletes RFC2388)
+rfc8314.txt Cleartext Considered Obsolete: Use of Transport Layer Security (TLS) for Email Submission and Access
+rfc1035.txt Domain Names - Implementation and Specification
+rfc7540.txt Hypertext Transfer Protocol Version 2 (HTTP/2)
+rfc7541.txt HPACK: Header Compression for HTTP/2
+rfc7838.txt HTTP Alternative Services
+rfc8484.txt DNS Queries over HTTPS (DoH)
+rfc0854.txt Telnet Protocol Specification
+rfc1436.txt The Internet Gopher Protocol
+rfc4511.txt Lightweight Directory Access Protocol (LDAP): The Protocol
+rfc5322.txt Internet Message Format
+rfc7238.txt The Hypertext Transfer Protocol Status Code 308 (Permanent Redirect)
+rfc8446.txt The Transport Layer Security (TLS) Protocol Version 1.3
+rfc3490.txt Internationalized Domain Names for Applications (IDNA) (obsoleted by RFC5890)
+rfc5336.txt SMTP Extension for Internationalized Email Addresses (obsoleted by RFC6531)
+rfc5335.txt Internationalized Email Headers (obsoleted by RFC6532)
+rfc5890.txt Internationalized Domain Names for Applications (IDNA) (obsoletes RFC3490)
+rfc6531.txt SMTP Extension for Internationalized Email (obsoletes RFC5336)
+rfc6532.txt Internationalized Email Headers (obsoletes RFC5335)

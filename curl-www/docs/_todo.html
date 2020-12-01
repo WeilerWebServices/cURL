@@ -1,0 +1,30 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - TODO</TITLE>
+#include "css.t"
+</HEAD>
+
+#define CURL_DOCS
+#define PROJ_DOCS
+#define DOCS_TODO
+#define CURL_URL docs/todo.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(Docs, "/docs/", Project, "/docs/projdocs.html", TODO)
+
+TITLE(TODO -- nice to have features)
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="/dev/deprecate.html">Deprecate</a>
+<br><a href="knownbugs.html">Known Bugs</a>
+<br><a href="bugs.html">How To Report Bugs</a>
+</div>
+
+#include "todo.gen"
+
+#include "_footer.html"
+
+</BODY>
+</HTML>

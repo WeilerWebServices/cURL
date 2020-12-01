@@ -1,0 +1,28 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>libcurl - curl_version()</TITLE>
+#include "css.t"
+#include "manpage.t"
+</HEAD>
+
+#define RAW_FILE curl_version.3
+#define BUG_TITLE curl_version%20man%20page:
+#define MENU_EASY
+#define LIBCURL_DOCS
+#define DOCS_VERSION
+#define CURL_URL libcurl/c/curl_version.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(libcurl, "/libcurl/", API, "/libcurl/c/", curl_version)
+
+TITLE(curl_version - returns the libcurl version)
+#include "libcurl-related.t"
+#include "curl_version.gen"
+#include "_footer.html"
+
+</BODY>
+</HTML>
+
+

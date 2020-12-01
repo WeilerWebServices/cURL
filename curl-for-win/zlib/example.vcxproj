@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{07B77018-FAE5-3DE4-A468-96CCECFFCD12}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>example</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\natew\Desktop\cURL\curl-for-win\zlib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">example.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">example</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\natew\Desktop\cURL\curl-for-win\zlib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">example.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">example</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\natew\Desktop\cURL\curl-for-win\zlib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">example.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">example</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\natew\Desktop\cURL\curl-for-win\zlib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">example.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">example</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natew\Desktop\cURL\curl-for-win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -static-libgcc -m -fno-ident</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>_LARGEFILE64_SOURCE=1;_LFS64_LARGEFILE=1;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>GCC_WINDRES;_DEBUG;_LARGEFILE64_SOURCE=1;_LFS64_LARGEFILE=1;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natew\Desktop\cURL\curl-for-win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natew\Desktop\cURL\curl-for-win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\zlibd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/natew/Desktop/cURL/curl-for-win/zlib/Debug/example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/natew/Desktop/cURL/curl-for-win/zlib/Debug/example.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natew\Desktop\cURL\curl-for-win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -static-libgcc -m -fno-ident</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>_LARGEFILE64_SOURCE=1;_LFS64_LARGEFILE=1;NDEBUG;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>GCC_WINDRES;_LARGEFILE64_SOURCE=1;_LFS64_LARGEFILE=1;NDEBUG;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natew\Desktop\cURL\curl-for-win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natew\Desktop\cURL\curl-for-win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/natew/Desktop/cURL/curl-for-win/zlib/Release/example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/natew/Desktop/cURL/curl-for-win/zlib/Release/example.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natew\Desktop\cURL\curl-for-win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -static-libgcc -m -fno-ident</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>_LARGEFILE64_SOURCE=1;_LFS64_LARGEFILE=1;NDEBUG;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>GCC_WINDRES;_LARGEFILE64_SOURCE=1;_LFS64_LARGEFILE=1;NDEBUG;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natew\Desktop\cURL\curl-for-win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natew\Desktop\cURL\curl-for-win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/natew/Desktop/cURL/curl-for-win/zlib/MinSizeRel/example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/natew/Desktop/cURL/curl-for-win/zlib/MinSizeRel/example.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natew\Desktop\cURL\curl-for-win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -static-libgcc -m -fno-ident</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>_LARGEFILE64_SOURCE=1;_LFS64_LARGEFILE=1;NDEBUG;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>GCC_WINDRES;_LARGEFILE64_SOURCE=1;_LFS64_LARGEFILE=1;NDEBUG;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natew\Desktop\cURL\curl-for-win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natew\Desktop\cURL\curl-for-win\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/natew/Desktop/cURL/curl-for-win/zlib/RelWithDebInfo/example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/natew/Desktop/cURL/curl-for-win/zlib/RelWithDebInfo/example.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/natew/Desktop/cURL/curl-for-win/zlib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+E:\Program-Files\Editor\CMake\bin\cmake.exe -SC:/Users/natew/Desktop/cURL/curl-for-win/zlib -BC:/Users/natew/Desktop/cURL/curl-for-win/zlib --check-stamp-file C:/Users/natew/Desktop/cURL/curl-for-win/zlib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\3.18.4\CMakeCCompiler.cmake;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\3.18.4\CMakeRCCompiler.cmake;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\3.18.4\CMakeSystem.cmake;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\CheckTypeSize\OFF64_T.c;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\zconf.h.cmakein;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\zlib.pc.cmakein;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckFunctionExists.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckIncludeFile.c.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckIncludeFileCXX.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckTypeSize.c.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckTypeSize.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\Windows-windres.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/natew/Desktop/cURL/curl-for-win/zlib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+E:\Program-Files\Editor\CMake\bin\cmake.exe -SC:/Users/natew/Desktop/cURL/curl-for-win/zlib -BC:/Users/natew/Desktop/cURL/curl-for-win/zlib --check-stamp-file C:/Users/natew/Desktop/cURL/curl-for-win/zlib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\3.18.4\CMakeCCompiler.cmake;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\3.18.4\CMakeRCCompiler.cmake;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\3.18.4\CMakeSystem.cmake;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\CheckTypeSize\OFF64_T.c;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\zconf.h.cmakein;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\zlib.pc.cmakein;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckFunctionExists.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckIncludeFile.c.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckIncludeFileCXX.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckTypeSize.c.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckTypeSize.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\Windows-windres.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/natew/Desktop/cURL/curl-for-win/zlib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+E:\Program-Files\Editor\CMake\bin\cmake.exe -SC:/Users/natew/Desktop/cURL/curl-for-win/zlib -BC:/Users/natew/Desktop/cURL/curl-for-win/zlib --check-stamp-file C:/Users/natew/Desktop/cURL/curl-for-win/zlib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\3.18.4\CMakeCCompiler.cmake;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\3.18.4\CMakeRCCompiler.cmake;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\3.18.4\CMakeSystem.cmake;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\CheckTypeSize\OFF64_T.c;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\zconf.h.cmakein;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\zlib.pc.cmakein;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckFunctionExists.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckIncludeFile.c.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckIncludeFileCXX.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckTypeSize.c.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckTypeSize.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\Windows-windres.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/natew/Desktop/cURL/curl-for-win/zlib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+E:\Program-Files\Editor\CMake\bin\cmake.exe -SC:/Users/natew/Desktop/cURL/curl-for-win/zlib -BC:/Users/natew/Desktop/cURL/curl-for-win/zlib --check-stamp-file C:/Users/natew/Desktop/cURL/curl-for-win/zlib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\3.18.4\CMakeCCompiler.cmake;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\3.18.4\CMakeRCCompiler.cmake;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\3.18.4\CMakeSystem.cmake;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\CheckTypeSize\OFF64_T.c;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\zconf.h.cmakein;C:\Users\natew\Desktop\cURL\curl-for-win\zlib\zlib.pc.cmakein;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckFunctionExists.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckIncludeFile.c.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckIncludeFileCXX.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckTypeSize.c.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CheckTypeSize.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\Windows-windres.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\Program-Files\Editor\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\natew\Desktop\cURL\curl-for-win\zlib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\natew\Desktop\cURL\curl-for-win\zlib\test\example.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\natew\Desktop\cURL\curl-for-win\zlib\ZERO_CHECK.vcxproj">
+      <Project>{8F3C757D-A6D9-3A8C-BF34-EE2C5236AC07}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natew\Desktop\cURL\curl-for-win\zlib\zlib.vcxproj">
+      <Project>{03D28067-FA7F-39DD-871B-04F0CB652AB9}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

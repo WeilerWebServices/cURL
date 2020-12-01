@@ -1,0 +1,8 @@
+C:/Users/natew/Desktop/cURL/curl-for-win/zlib/CMakeFiles/zlib.dir
+C:/Users/natew/Desktop/cURL/curl-for-win/zlib/CMakeFiles/zlibstatic.dir
+C:/Users/natew/Desktop/cURL/curl-for-win/zlib/CMakeFiles/example.dir
+C:/Users/natew/Desktop/cURL/curl-for-win/zlib/CMakeFiles/minigzip.dir
+C:/Users/natew/Desktop/cURL/curl-for-win/zlib/CMakeFiles/INSTALL.dir
+C:/Users/natew/Desktop/cURL/curl-for-win/zlib/CMakeFiles/RUN_TESTS.dir
+C:/Users/natew/Desktop/cURL/curl-for-win/zlib/CMakeFiles/ALL_BUILD.dir
+C:/Users/natew/Desktop/cURL/curl-for-win/zlib/CMakeFiles/ZERO_CHECK.dir

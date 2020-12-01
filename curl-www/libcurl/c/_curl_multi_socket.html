@@ -1,0 +1,25 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl_multi_socket</TITLE>
+#include "css.t"
+#include "manpage.t"
+</HEAD>
+
+#define RAW_FILE curl_multi_socket.3
+#define BUG_TITLE curl_multi_socket%20man%20page:
+#define MENU_MULTI
+#define LIBCURL_DOCS
+#define DOCS_MULTI_SOCKET
+#define CURL_URL libcurl/c/curl_multi_socket.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(libcurl, "/libcurl/", API, "/libcurl/c/", libcurl)
+TITLE(curl_multi_socket - reads/writes available data)
+#include "libcurl-related.t"
+#include "curl_multi_socket.gen"
+#include "_footer.html"
+
+</BODY>
+</HTML>

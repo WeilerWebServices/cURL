@@ -1,0 +1,33 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>libcurl - options used by examples</TITLE>
+#include "css.t"
+</HEAD>
+
+#define LIBCURL_EXAMPLE
+#define DOCS_INDEX
+#define CURL_URL libcurl/c/options-in-examples.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE4(libcurl, "/libcurl/", API, "/libcurl/c/", Examples,
+       "/libcurl/c/example.html", Options Used By Examples)
+
+TITLE(Options Used By Examples)
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="easy_getinfo_options.html">info options</a>
+<br><a href="multi_setopt_options.html">multi options</a>
+<br><a href="./">API</a>
+</div>
+<p>
+ This list shows examples that use specific options.  If there's no example
+ listed for the given option, please consider to write one up and send us!
+<p>
+#include "options-in-examples.gen"
+
+#include "_footer.html"
+
+</BODY>
+</HTML>

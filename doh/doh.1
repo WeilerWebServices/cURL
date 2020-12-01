@@ -1,0 +1,39 @@
+.\" You can view this file with:
+.\" nroff -man doh.1
+.\" Written by Daniel Stenberg
+.\"
+.TH doh 1 "17 Sep 2019" "doh 0.1" "doh Manual"
+.SH NAME
+doh \- query a DoH server
+.SH SYNOPSIS
+.B doh [options] [host] [server URL]
+.SH DESCRIPTION
+.B doh
+sends DNS queries to a DNS-over-HTTPS (DoH) server. If no server URL is
+specified, it defaults to Cloudflare's public server.
+.SH OPTIONS
+.IP \-h
+Show the help output.
+.IP \-k
+Run in insecure mode. It completely switches off certificate checking of the
+DoH server!
+.IP "-tTYPE"
+Set query type. Supported values are A, AAAA, CNAME and TXT.
+.IP \-T
+Test mode. Returns an exit code if there isn't a proper DoH response.
+.IP \-v
+Verbose mode. Shows lots of details from the underlying HTTPS connection and
+transfer.
+.IP \-4
+Use only IPv4 transport to DOH server.
+.IP \-6
+Use only IPv6 transport to DOH server.
+.IP "-r NAME:PORT:ADDRESS"
+Provide a fixed IP address for the given host name + port pair. This option
+can be provided several times. This preloads the DNS cache.
+
+Example: "-r example.com:443:127.0.0.1"
+.IP \-V
+Show version number and exit.
+.SH WWW
+https://github.com/curl/doh

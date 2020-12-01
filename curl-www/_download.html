@@ -1,0 +1,90 @@
+#include "_doctype.html"
+<html lang="en">
+<head> <title>curl - Download</title>
+#include "css.t"
+</head>
+
+#define CURL_DOWNLOAD
+#define CURL_URL download.html
+#define AD_BIGGOOGLELEFT
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE1(Download)
+
+#include "release.t"
+
+TITLE(Releases and Downloads)
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="/changes.html">Changelog</a>
+<br><a href="/download/">Old Releases</a>
+<br><a href="/dev/source.html">Source code repo</a>
+<br><a href="https://curl.se/snapshots/">Daily Snapshots</a>
+<br><a href="https://daniel.haxx.se/address.html">GPG Key</a>
+<br><a href="/docs/releases.html">Releaselog</a>
+</div>
+<p>
+ The curl project mostly provides source packages. Other packages are kindly
+ provided by external persons and organizations.
+
+SUBTITLE(Source Archives)
+<p>
+ <b>curl __STABLE</b>, Released on the DATE(__RELDATE). <a href="changes.html#__STABLETAG">Changelog for __STABLE</a>.
+
+<table class="download">
+  <tr>
+    <td class="download"><a href="/download/curl-__STABLE.tar.gz" type="application/x-gzip">curl-__STABLE.tar.gz</a></td>
+    <td class="download"><a href="/download/curl-__STABLE.tar.gz.asc" type="application/pgp-signature">gpg</a></td>
+    <td class="download"><a href="//curl.se/latest.cgi?curl=tar.gz" type="text/html">mirror</a></td>
+    <td class="download"><span class="metalink"><a href="//curl.se/metalink.cgi?curl=tar.gz" type="application/metalink4+xml"><img src="//curl.se/pix/metalink.png" border=0 alt="">metalink</a></span></td>
+  </tr>
+  <tr>
+    <td class="download"><a href="/download/curl-__STABLE.tar.bz2" type="application/x-bzip2">curl-__STABLE.tar.bz2</a></td>
+    <td class="download"><a href="/download/curl-__STABLE.tar.bz2.asc" type="application/pgp-signature">gpg</a></td>
+    <td class="download"><a href="//curl.se/latest.cgi?curl=tar.bz2" type="text/html">mirror</a></td>
+    <td class="download"><span class="metalink"><a href="//curl.se/metalink.cgi?curl=tar.bz2" type="application/metalink4+xml"><img src="//curl.se/pix/metalink.png" border=0 alt="">metalink</a></span></td>
+  </tr>
+  <tr>
+    <td class="download"><a href="/download/curl-__STABLE.zip" type="application/zip">curl-__STABLE.zip</a></td>
+    <td class="download"><a href="/download/curl-__STABLE.zip.asc" type="application/pgp-signature">gpg</a></td>
+    <td class="download"><a href="//curl.se/latest.cgi?curl=zip" type="text/html">mirror</a></td>
+    <td class="download"><span class="metalink"><a href="//curl.se/metalink.cgi?curl=zip" type="application/metalink4+xml"><img src="//curl.se/pix/metalink.png" border=0 alt="">metalink</a></span></td>
+  </tr>
+  <tr>
+    <td class="download"><a href="/download/curl-__STABLE.tar.xz" type="application/x-xz">curl-__STABLE.tar.xz</a></td>
+    <td class="download"><a href="/download/curl-__STABLE.tar.xz.asc" type="application/pgp-signature">gpg</a></td>
+    <td class="download"><a href="//curl.se/latest.cgi?curl=tar.xz" type="text/html">mirror</a></td>
+    <td class="download"><span class="metalink"><a href="//curl.se/metalink.cgi?curl=tar.xz" type="application/metalink4+xml"><img src="//curl.se/pix/metalink.png" border=0 alt="">metalink</a></span></td>
+  </tr>
+</table>
+
+SUBTITLE(Download Wizard)
+<p>
+ Need help to select what to download? Use the <a href="//curl.se/dlwiz/">curl Download Wizard</a>!
+
+SUBTITLE(Packages)
+<p>
+#include "dl/files.html"
+<p>
+ <table><tr class="latest2"><td>
+ This colour means the packaged version is the latest stable version available (__STABLE)!
+ </td></tr></table>
+<p>
+ More information on
+ <span class="metalink"><img src="/pix/metalink.png" border=0 alt="">metalink</span>
+ downloads is available from <a href="https://www.metalinker.org/">www.metalinker.org</a>.
+<p>
+ If you have newer archives or archives for platforms not already present in
+ this table, we'd like to add them to this table with a pointer to your
+ location. Mail <a href="mailto:curl-release&#64;haxx.se">curl-release</a> and
+ tell us!
+
+SUBTITLE(Official curl docker images)
+<p>
+    The official curl docker images are available on Docker Hub: <a href="https://hub.docker.com/r/curlimages/curl">curlimages/curl</a>.
+
+    #include "_footer.html"
+</BODY>
+</HTML>

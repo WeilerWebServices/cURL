@@ -1,0 +1,30 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - Tutorial</TITLE>
+#include "css.t"
+</HEAD>
+
+#define CURL_DOCS
+#define TOOL_DOCS
+#define DOCS_HTTPSCRIPT
+#define CURL_URL httpscripting.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(Docs, "/docs/", Tool, "/docs/tooldocs.html", HTTP Scripting)
+
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="manpage.html">curl man page</a>
+<br><a href="manual.html">Manual</a>
+<br><a href="faq.html">FAQ</a>
+</div>
+
+#include "httpscript.gen"
+
+#include "_footer.html"
+
+</BODY>
+</HTML>
+

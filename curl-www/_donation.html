@@ -1,0 +1,70 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - Donation</TITLE>
+#include "css.t"
+</HEAD>
+
+#define PROJ_DOCS
+#define DOCS_DONATION
+#define CURL_URL donation.html
+
+#include "setup.t"
+#include "docs/_menu.html"
+
+#define DONATE \
+<center> \
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post"> \
+<input type="hidden" name="cmd" value="_xclick"> \
+<input type="hidden" name="business" value="daniel@haxx.se"> \
+<input type="hidden" name="item_name" value="donating to project curl"> \
+<input type="hidden" name="item_number" value="777"> \
+<input type="image" src="paypal.png" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!"> \
+</form></center>
+
+WHERE3(Docs, "/docs/", Project Documentation, "/docs/projdocs.html", Donation)
+
+TITLE(Donate to the curl project!)
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="/docs/help-us.html">Help us</a>
+<br><a href="/sponsors.html">Sponsors</a>
+</div>
+<p>
+SUBTITLE(How)
+<p>
+ <big><a href="https://opencollective.com/curl/donate">Donate!</a></big>
+<p>
+  (Donations are done to Open Source Collective 501c6, a US non-profit that
+  collects and holds funds on the behalf of the curl project.)
+<p>
+SUBTITLE(Why)
+<p>
+  To ensure that the curl project continues to strive. Even open source
+  projects has expenses! You can use curl forever without paying anything, but
+  maybe you think you've got quite a lot and feel you could contribute a
+  little back?
+<p>
+  See also Mary Gardiner's excellent
+  guide <a href="https://puzzling.org/pub/HOWTO/Free/">How To Pay for Free
+  Software</a>.
+  
+SUBTITLE(What to donate)
+<p>
+  Donate your time. Answer questions, contribute code, review patches and help out.
+  Or let one of your employees do this for the benefit of the project!
+<p>
+  If you cannot donate time or skill, consider donating a small amount of
+  money. Maybe even do it in a recurring manner?
+<p>
+  Anyone donating 100USD per month, or more, is considered
+  a <a href="/sponsors.html">sponsor</a> and is entitled to request to get
+  listed on that page.
+  
+SUBTITLE(What are the donated funds used for?)
+<p>
+  Donated money is strictly and only used for project expenses, in particular
+  the <a href="/docs/bugbounty.html">bug bounty</a> and the curl annual
+  conference series <b>curl up</b>.
+#include "_footer.html"
+</BODY>
+</HTML>

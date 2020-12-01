@@ -1,0 +1,31 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - Frequently Asked Questions</TITLE>
+#include "css.t"
+</HEAD>
+
+#define CURL_DOCS
+#define DOCS_FAQ
+#define PROJ_DOCS
+#define CURL_URL docs/faq.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(Docs, "/docs/", Tool Documentation, "/docs/tooldocs.html", FAQ)
+
+TITLE(FAQ -- Frequently Asked Questions)
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="manpage.html">curl man page</a>
+<br><a href="manual.html">Manual</a>
+<br><a href="httpscripting.html">HTTP Scripting</a>
+</div>
+
+#include "faq.gen"
+
+#include "_footer.html"
+
+</BODY>
+</HTML>
+

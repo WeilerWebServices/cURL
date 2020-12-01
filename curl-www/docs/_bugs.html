@@ -1,0 +1,30 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - Report Bugs</TITLE>
+#include "css.t"
+</HEAD>
+
+#define CURL_DOCS
+#define PROJ_DOCS
+#define DOCS_BUGS
+#define CURL_URL docs/bugs.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(Docs, "/docs/", Project, "/docs/projdocs.html", Report Bugs)
+
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="manpage.html">curl man page</a>
+<br><a href="manual.html">Manual</a>
+<br><a href="knownbugs.html">Known bugs</a>
+</div>
+
+#include "bugs.gen"
+
+#include "_footer.html"
+
+</BODY>
+</HTML>
+

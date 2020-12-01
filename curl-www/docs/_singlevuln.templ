@@ -1,0 +1,34 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>Vulnerabilities in curl %version</TITLE>
+#include "css.t"
+<style type="text/css">
+.contents {
+  max-width: 95%;
+}
+</style>
+</HEAD>
+
+#define CURL_DOCS
+#define CURL_URL docs/vuln-%version.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(Docs, "/docs/", Vulnerability table, "/docs/vulnerabilities.html", %version vulnerabilities)
+
+TITLE(Vulnerabilities in curl %version)
+#include "adv-related-box.inc"
+
+<p> curl version <b>%version</b> was released on <b>%date</b>. The following
+<b>%vulnnum</b> security problem%vulnplural known to exist in this version.
+
+%vulnerabilities
+
+<p>
+ <a href="/changes.html#%anchor">Changelog for curl %version</a>
+
+%nextprev
+
+#include "_footer.html"
+</body> </html>

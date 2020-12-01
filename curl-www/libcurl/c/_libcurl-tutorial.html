@@ -1,0 +1,31 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>libcurl - programming tutorial</TITLE>
+#include "css.t"
+#include "manpage.t"
+</HEAD>
+
+#define LIBCURL_DOCS
+#define DOCS_TUTORIAL
+#define CURL_URL libcurl/c/libcurl-tutorial.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(libcurl, "/libcurl/", API, "/libcurl/c/", programming with libcurl)
+
+TITLE(libcurl programming tutorial)
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="example.html">Examples</a>
+<br><a href="./">API</a>
+</div>
+
+#include "libcurl-tutorial.gen"
+
+#include "_footer.html"
+
+</BODY>
+</HTML>
+
+

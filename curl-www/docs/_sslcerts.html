@@ -1,0 +1,27 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - SSL CA Certificates</TITLE>
+#include "css.t"
+</HEAD>
+
+#define CURL_DOCS
+#define PROT_DOCS
+#define DOCS_SSLCERTS
+
+#define CURL_URL docs/sslcerts.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(Docs, "/docs/", Protocols, "/docs/protdocs.html", SSL Certificates)
+
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="caextract.html">CA extract</a>
+</div>
+#include "sslcerts.gen"
+#include "_footer.html"
+
+</BODY>
+</HTML>
+

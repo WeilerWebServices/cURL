@@ -1,0 +1,19 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>libcurl - Bindings</TITLE>
+#include "css.t"
+</HEAD>
+
+#define LIBCURL_BINDINGS
+#define CURL_URL libcurl/bindings.html
+
+#include "setup.t"
+#include "table.t"
+#include "_menu.html"
+
+WHERE2(libcurl, "/libcurl/", Bindings)
+<p>
+#include "bindings.gen"
+#include "_footer.html"
+</BODY>
+</HTML>

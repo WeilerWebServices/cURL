@@ -1,0 +1,134 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - Development</TITLE>
+#include "css.t"
+</HEAD>
+
+#define DEVEL_INDEX
+#define CURL_URL devel.html
+
+#include "_menu.html"
+#include "setup.t"
+#include "../release.t"
+#include "featurewindow.t"
+
+WHERE1(Development)
+
+TITLE(Developing curl)
+<div style="float: right; width: 10em; margin-left: 20px;">
+  The <b>Feature window</b> is now<br>
+#if FEATUREWINDOW
+  <img src="../pix/open-sign.svg" 
+#else
+  <img src="../pix/closed-sign.png"
+#endif
+        style="width: 15em;">
+</div>
+<p>
+ This is the section of the web site devoted to the development of curl and
+ libcurl. If you are just a "user" of curl or libcurl, this may not be where
+ you want to hang out.
+<p>
+ There is always development going on in the curl project.  To help out the
+ development team, we provide these services:
+ 
+SUBTITLE(Generated contents)
+<p>
+  Build and source information that is updated all the time:
+
+<ul>
+
+<li>
+ <a href="builds.html">Automatic Builds</a> - We
+ build curl automatically non-stop to verify that it builds and works. Learn <a href="howto.html">how to autobuild</a> and read the <a href="summary.html">autobuild stats</a>.
+<li> <a href="/snapshots/">Daily Snapshot</a> - The latest
+ version of curl, packaged and provided daily.
+<li> <a href="/scans/">Daily scans</a> with the clang source code analyzer.
+<li> <a href="/gitstats/">git stats</a>, updated daily
+<li> <a href="/dashboard.html">dashboard</a> - daily updated graphs showing current project status
+</ul>
+
+SUBTITLE(Broadcasted commit info)
+<p>
+ Each push to the git repository will be announced over various systems.
+
+<ul>
+
+<li> Mail is sent to the <a
+href="https://cool.haxx.se/mailman/listinfo/curl-commits">curl-commits</a>
+mailing list
+
+<li> A note is dropped in the #curl IRC channel
+
+</ul>
+
+SUBTITLE(Work in progress)
+<p>
+ Stuff being worked on for the next release.
+
+<ul>
+<li> Next release is scheduled to ship on <b>__NEXTDATE</b>.
+<li> <a href="release-notes.html">RELEASE-NOTES</a> is the current work in
+ progress document for the next release.
+<li> <a href="deprecate.html">DEPRECATE</a> - the plan for upcoming
+  removals of features.
+<li>
+ <a href="source.html">Source code</a> - check out the latest code
+ directly from git
+
+<li>
+ Release calendar, pick your format:  <a href="https://www.google.com/calendar/ical/c9u5d64odop9js55oltfarjk6g%40group.calendar.google.com/public/basic.ics">ICAL</a>, <a href="https://www.google.com/calendar/embed?src=c9u5d64odop9js55oltfarjk6g%40group.calendar.google.com&ctz=Europe/Stockholm">HTML</a>
+
+</ul>
+
+SUBTITLE(Bugs and discussions)
+<ul>
+<li>
+ <a href="https://github.com/curl/curl/issues">Bug tracker</a>
+ [github] - submit problems there. See also the <a
+ href="/docs/knownbugs.html">KNOWN_BUGS</a> document.
+
+<li>
+ <a href="https://curl.se/mail/">libcurl mailing list</a> - Development
+ talk and thoughts about how the future will become is discussed there.
+
+<li> A few devs and users hang out on IRC, in the #curl channel on
+irc.freenode.net
+
+<li>
+ We also get <a href="https://github.com/curl/curl/pulls">pull requests</a>
+ filed at github.
+
+</ul>
+
+SUBTITLE(Developer Documentation)
+<p>
+ Most of these are documents from the source archive converted to web pages
+ here for your convenience.
+<ul>
+
+<li> <a href="/docs/todo.html">TODO</a> - we try to maintain lists of what
+ things you could <a href="/help.html">help us with</a> and features a future
+ curl release might get.
+
+<li>
+  <a href="contribute.html">Contribute</a> explains about a few things
+  to consider when you contribute with patches and source code to the curl
+  project.
+
+<li>
+  <a href="internals.html">Internals</a> describes how things work
+  internally in curl, for code hackers, bug fixers and generally interested
+  parties.
+
+<li> The <a href="/docs/knownbugs.html">KNOWN_BUGS</a> list.
+
+<li>
+  <a href="/docs/thanks.html">Thanks to these people</a>, curl exists as it is
+  today!
+
+</ul>
+
+#include "_footer.html"
+</BODY>
+</HTML>

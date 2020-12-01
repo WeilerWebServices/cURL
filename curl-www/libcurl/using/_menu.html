@@ -1,0 +1,35 @@
+#include "setup.t"
+
+#define BACKGROUND "#ffffff"
+#define TEXTCOLOR "#000000"
+#define MENUTEXT "#ffffff"
+#define MENUCOLOR "#e0c0c0"
+
+#ifndef NOBODY
+<BODY bgcolor=BACKGROUND text=TEXTCOLOR link="#0000ff" vlink="#808080" alink="red">
+#endif
+
+<div class="main">
+<div class="menu">
+
+#ifdef USING_INDEX
+LINK("/libcurl/using/", Using libcurl )
+#else
+VLINK("/libcurl/using/", Using libcurl, Using libcurl section)
+#endif
+
+#ifdef USING_AUTOCONF
+LINK("/libcurl/using/autoconf.html", autoconf)
+#else
+VLINK("/libcurl/using/autoconf.html", autoconf, How to detect libcurl with autoconf)
+#endif
+
+#ifdef USING_CURL_CONFIG
+LINK("/libcurl/using/curl-config.html", curl-config)
+#else
+VLINK("/libcurl/using/curl-config.html", curl-config, How to use curl-config)
+#endif
+
+</div>
+
+START_OF_MAIN

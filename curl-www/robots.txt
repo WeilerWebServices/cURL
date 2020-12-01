@@ -1,0 +1,2 @@
+# no point in indexing these
+Disallow: /dev/log.cgi

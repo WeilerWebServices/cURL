@@ -1,0 +1,519 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - SSL libraries compared</TITLE>
+#include "css.t"
+<link rel="stylesheet" type="text/css" href="comparison.css">
+</HEAD>
+
+#define CURL_DOCS
+#define PROT_DOCS
+#define DOCS_SSL_COMPARED
+#define CURL_URL docs/ssl-compared.html
+
+#include "_menu.html"
+#include "setup.t"
+#include "release.t"
+
+WHERE3(Docs, "/docs/", Protocols, "/docs/protdocs.html", SSL libraries compared)
+
+TITLE(Compare SSL libraries)
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="comparison-table.html">Compare HTTP/FTP Tools</a>
+<br><a href="../libcurl/competitors.html">Compare HTTP Libraries</a>
+</div>
+
+<p> This comparison only involves SSL/TLS libraries that libcurl can be built
+to use.
+
+#define FEATURE <td class="yes">yes</td>
+#define MISSING <td class="no">no</td>
+#define UNKNOWN <td class="unknown">?</td>
+#define FEATURE_P2 <td class="yes">yes [2]</td>
+#define FEATURE_P3 <td class="yes">yes [3]</td>
+#define FEATURE_P4 <td class="yes">yes [4]</td>
+#define FEATURE_P6 <td class="yes">yes [6]</td>
+#define FEATURE_P7 <td class="yes">yes [7]</td>
+#define FEATURE_P8 <td class="yes">yes [8]</td>
+
+#define MISSING_P <td class="no">no*</td>
+#define NA <td class="unknown">N/A</td>
+
+#define MANUAL <td class="no">manual</td>
+#define AUTOMATIC <td class="yes">automatic</td>
+
+#define PKCS11 <td class="yes">PKCS<!-- " -->#11<!-- "--></td>
+#define PKCS11_P8 <td class="yes">PKCS<!-- " -->#11<!-- "--> [8]</td>
+#define KEYCHAIN <td class="yes">Keychain</td>
+#define WINCAPI <td class="yes">Microsoft CryptoAPI</td>
+
+#define NEWCOL <td>
+#define ENDCOL </td>
+
+#define FEAT <td>
+#define ENDFEAT </td>
+
+#define NEWLINE <tr valign=top>
+#define ENDLINE </tr>
+
+#define NICETD <th>
+#define NICETDEND </th>
+
+<p>
+<table cellspacing="2" cellpadding="2" border="0" summary="Comparison of SSL libraries">
+ <thead>
+ <tr class="tabletop">
+  NICETD Feature NICETDEND
+  NICETD OpenSSL[1] NICETDEND
+  NICETD GnuTLS NICETDEND
+  NICETD NSS NICETDEND
+  NICETD wolfSSL NICETDEND
+  NICETD mbedTLS NICETDEND
+  NICETD Schannel NICETDEND
+  NICETD Secure Transport NICETDEND
+ ENDLINE
+ </thead>
+
+ <tbody>
+
+ NEWLINE
+  FEAT Native cert check ENDFEAT
+  MISSING
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+ ENDLINE
+
+ NEWLINE
+  FEAT CRL ENDFEAT
+  MANUAL
+  MANUAL
+  AUTOMATIC
+  AUTOMATIC
+  MANUAL
+  AUTOMATIC
+  AUTOMATIC
+ ENDLINE
+
+ NEWLINE
+  FEAT SSLv2 ENDFEAT
+  FEATURE
+  MISSING
+  FEATURE
+  MISSING
+  FEATURE
+  FEATURE
+  FEATURE
+ ENDLINE
+
+ NEWLINE
+  FEAT SSLv3 ENDFEAT
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+ ENDLINE
+
+ NEWLINE
+  FEAT TLSv1.0 ENDFEAT
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+ ENDLINE
+
+ NEWLINE
+  FEAT TLSv1.1 ENDFEAT
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE_P2
+ ENDLINE
+
+ NEWLINE
+  FEAT TLSv1.2 ENDFEAT
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE_P4
+  FEATURE_P2
+ ENDLINE
+
+ NEWLINE
+  FEAT TLSv1.3 ENDFEAT
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  MISSING
+  MISSING
+  FEATURE_P6
+ ENDLINE
+ 
+ NEWLINE
+  FEAT TLS SRP ENDFEAT
+  FEATURE
+  FEATURE
+  MISSING
+  MISSING
+  MISSING
+  MISSING
+  MISSING
+ ENDLINE
+
+ NEWLINE
+  FEAT TLS ECC ENDFEAT
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE_P3
+  FEATURE_P2
+ ENDLINE
+
+ NEWLINE
+  FEAT ALPN ENDFEAT
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE_P7
+  MISSING
+ ENDLINE
+
+ NEWLINE
+  FEAT NPN ENDFEAT
+  FEATURE
+  MISSING
+  FEATURE
+  MISSING
+  MISSING
+  FEATURE_P7
+  MISSING
+ ENDLINE
+
+ NEWLINE
+  FEAT Small ENDFEAT
+  MISSING
+  MISSING
+  MISSING
+  FEATURE
+  FEATURE
+  NA
+  NA
+ ENDLINE
+
+ NEWLINE
+  FEAT Platforms ENDFEAT
+  FEAT POSIX, Windows, VMS ENDFEAT
+  FEAT POSIX, Windows ENDFEAT
+  FEAT POSIX, Windows ENDFEAT
+  FEAT POSIX, Windows ENDFEAT
+  FEAT POSIX, Windows ENDFEAT
+  FEAT Windows ENDFEAT
+  FEAT macOS, iOS, tvOS etc ENDFEAT
+ ENDLINE
+
+ NEWLINE
+  FEAT Uses Certificate/Key Files ENDFEAT
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  MISSING
+  MISSING
+ ENDLINE
+
+ NEWLINE
+  FEAT Uses Certificate/Key Database ENDFEAT
+  MISSING
+  FEATURE
+  FEATURE
+  MISSING
+  MISSING
+  FEATURE
+  FEATURE
+ ENDLINE
+
+ NEWLINE
+  FEAT Crypto module/token support ENDFEAT
+  PKCS11_P8
+  PKCS11
+  PKCS11
+  MISSING
+  MISSING
+  WINCAPI
+  KEYCHAIN
+ ENDLINE
+
+ NEWLINE
+  FEAT Select Certificates/Keys with PKCS#11 URI ENDFEAT
+  FEATURE_P8
+  FEATURE
+  MISSING
+  NA
+  NA
+  NA
+  NA
+ ENDLINE
+
+ NEWLINE
+  FEAT Integrates with system token database ENDFEAT
+  FEATURE_P8
+  FEATURE
+  MISSING
+  MISSING
+  MISSING
+  FEATURE
+  FEATURE
+ ENDLINE
+
+ NEWLINE
+  FEAT FIPS-140 ENDFEAT
+  FEATURE
+  FEATURE
+  FEATURE
+  FEATURE
+  MISSING
+  FEATURE
+  FEATURE
+ ENDLINE
+
+ NEWLINE
+  FEAT OpenSSL-like API ENDFEAT
+  NA
+  FEAT limited ENDFEAT
+  FEAT separate ENDFEAT
+  FEATURE
+  MISSING
+  MISSING
+  FEAT digests only ENDFEAT
+ ENDLINE
+
+ NEWLINE
+  FEAT Vendor ENDFEAT
+  FEAT <a href="https://www.openssl.org/">OpenSSL Project</a> ENDFEAT
+  FEAT <a href="https://www.gnu.org/">Free Software Foundation</a> ENDFEAT
+  FEAT <a href="https://www.mozilla.org/">Mozilla Foundation</a> ENDFEAT
+  FEAT <a href="https://www.wolfssl.com/">wolfSSL</a> ENDFEAT
+  FEAT <a href="https://tls.mbed.org/">mbed TLS</a> ENDFEAT
+  FEAT <a href="https://www.microsoft.com/">Microsoft Corporation</a> ENDFEAT
+  FEAT <a href="https://apple.com/">Apple Inc.</a> ENDFEAT
+ ENDLINE
+
+ NEWLINE
+  FEAT License ENDFEAT
+  FEAT 4-clause BSD ENDFEAT
+  FEAT LGPL ENDFEAT
+  FEAT MPL/LGPL/GPL ENDFEAT
+  FEAT GPLv2 / prop ENDFEAT
+  FEAT Apache 2.0 license / GPLv2 ENDFEAT
+  FEAT Proprietary ENDFEAT
+  FEAT APSL 2.0 ENDFEAT
+ ENDLINE
+
+ NEWLINE
+  FEAT First release ENDFEAT
+  NEWCOL 1998 ENDCOL
+  NEWCOL 2004? ENDCOL
+  NEWCOL ? ENDCOL
+  NEWCOL 2006 ENDCOL
+  NEWCOL 2006 ENDCOL
+  NEWCOL 2000 ENDCOL
+  NEWCOL 2003? ENDCOL
+ ENDLINE
+
+#if 0
+ NEWLINE
+  FEAT Version ENDFEAT
+  FEAT 1.0.1i ENDFEAT
+  FEAT 3.3.15 ENDFEAT
+  FEAT 3.16.4 ENDFEAT
+  FEAT 3.1.0 ENDFEAT
+  FEAT 1.3.8 ENDFEAT
+  FEAT 6.3.9600 ENDFEAT
+  FEAT 55471.14 ENDFEAT
+ ENDLINE
+#endif
+
+ NEWLINE
+  FEAT Famous Application ENDFEAT
+  FEAT Apache HTTPD ENDFEAT
+  FEAT GNOME ENDFEAT
+  FEAT Mozilla Firefox ENDFEAT
+  FEAT MySQL ENDFEAT
+  FEAT Hiawatha HTTPD ENDFEAT
+  FEAT Microsoft Internet Explorer ENDFEAT
+  FEAT Apple Safari ENDFEAT
+ ENDLINE
+
+ </tbody>
+</table>
+
+<br>
+ [1] = Mostly the same feature set is also provided by LibreSSL and BoringSSL
+<br>
+ [2] = Requires iOS 5.0 or later, or OS X 10.8.0 or later
+<br>
+ [3] = Requires Windows Vista or later
+<br>
+ [4] = Requires Windows 7 or later
+<br>
+ [6] = Requires iOS 11 or macOS 10.13
+<br>
+ [7] = support for ALPN and NPN was added
+ in <a href="https://technet.microsoft.com/en-us/library/hh831771.aspx">Windows
+ 8.1 / Server 2012 R2</a>.
+<br>
+ [8] = Via external <a href="https://github.com/OpenSC/OpenSC/wiki/Engine-pkcs11-quickstart">engine_pkcs11</a>;
+
+SUBTITLE(Glossary of Terms)
+
+<b>Native cert check:</b> If yes, then this means that the engine will
+ automatically check the domain name in the server's certificate against the
+ domain name used to connect to the server, unless CURLOPT_VERIFYHOST was
+ manually disabled. If no, then libcurl will perform this check manually.
+<p>
+
+<b>CRL:</b> CRL means "Certificate Revocation List" and is used to check to
+see if any certificates in the server's chain have been revoked for some
+reason. If automatic, then the engine will automatically download a CRL and
+use it to evaluate the trust of the server's certificate chain when performing
+the TLS handshake. If manual, then the engine will not automatically use a
+CRL, but you can provide one that has been downloaded separately by using the
+CURLOPT_CRL option. If no, then the CURLOPT_CRL option will be ignored.
+<p>
+
+<b>SSLv2:</b> This was the first public release of the SSL protocol. It is
+deprecated and really should no longer be used, because it has a number of
+serious security problems.
+<p>
+
+<b>SSLv3:</b> It is deprecated and should no longer be used, because it has a
+number of serious security problems.
+<p>
+
+<b>TLSv1.0:</b> TLS is a slight variation on SSLv3 that was the first version
+of the protocol to be approved of by the Internet Engineering Task Force
+(IETF). This version of TLS has been available since 1999 and is by far the
+most widely supported version on the public Internet. There have been a few
+minor security vulnerabilities found in TLSv1.0 which were fixed later, but
+all of them (so far) have been easily worked around, which has contributed to
+the longevity of this version of TLS.
+<p>
+
+<b>TLSv1.1:</b> TLSv1.1 is similar to v1.0, except that it has a better fix
+for the CBC (Cipher Block Chain) cipher-suite attack that lead to the BEAST
+(Browser Exploit Against SSL/TLS) vulnerability in TLSv1.0.
+<p>
+
+<b>TLSv1.2:</b> TLSv1.2 provides better security than earlier versions, with
+support for many all-new cipher suites that are even more difficult to
+crack.
+<p>
+
+<b>TLSv1.3:</b> This is the most recent version. TLSv1.3 provides even better
+security than TLSv1.2, with more data encrypted in the handshake etc. It also
+offers less roundtrip handshakes.
+<p>
+  
+<b>TLS SRP:</b> SRP means "Secure Remote Password" and it is a method of
+performing client-side authentication with a TLS server by using a user name
+and password, sometimes coupled with a certificate. It is not yet widely
+supported, but for the engines that do support it, you can provide the
+credentials to curl by using the CURLOPT_TLSAUTH_USERNAME and
+CURLOPT_TLSAUTH_PASSWORD options.
+<p>
+
+<b>TLS ECC:</b> ECC means "Elliptic Curve Cryptography" and it is an advanced
+set of cipher-suites that are used in TLS connections (typically with
+TLSv1.2). Not all engines support ECC.
+<p>
+
+<b>Uses Certificate/Key Files:</b> Some engines, such as OpenSSL, read
+certificates and keys from files rather than a central database. These engines
+require you to use a certificate bundle in order to verify a server's
+certificate chain; this is usually set at build time but can also be set by
+using the CURLOPT_CAINFO option.
+<p>
+
+<b>Uses Certificate/Key Database:</b> Some engines, such as Apple's Security
+framework, use a central database instead of separate files to store
+certificates and keys. Apple's Security framework database, for instance, is
+called the Keychain. For engines that use a database and don't also support
+files, the CURLOPT_CAINFO option is ignored.
+<p>
+
+<b>Crypto module/token support:</b> Support for cryptographic hardware tokens
+and software databases is typically provided via
+<a href="https://en.wikipedia.org/wiki/PKCS_11">; PKCS#11</a> on POSIX platforms,
+and via platform-specific APIs on Windows and Darwin. Examples of PKCS#11
+software tokens include the GNOME keyring, and the NSS "soft token" database.
+<p>
+
+<b>Integrates with system token database:</b> Platforms often have a
+system-wide configuration which specifies which crypto modules/token should
+be visible in which applications. Many Linux distributions have chosen
+to use <a href="https://p11-glue.freedesktop.org/p11-kit.html">p11-kit</a>;
+to provide this configuration, and some now consider it a bug for
+applications <em>not</em> to automatically use the tokens configured therein.
+<p>
+
+<b>Select Certificates/Keys with PKCS#11 URI:</b> <a
+href="https://tools.ietf.org/html/rfc7512">RFC 7512</a> defines a
+standard URI format for specifying objects within PKCS#11
+tokens/databases.
+<p>
+
+<b>FIPS-140:</b> FIPS-140 is a security standard used by the United States and
+Canada for transferring information that is sensitive but not classified. If
+yes, and you are using curl or a libcurl-based application in the US or
+Canadian government, or in a government contractor, then it's okay for you to
+use the engine when building curl/libcurl.
+<p>
+
+<b>License:</b> If you are deploying an application that uses libcurl, then
+the license used by the engine may affect whether or not you are able to
+distribute your application legally. OpenSSL's 4-clause BSD license, for
+instance, is not compatible with the GNU GPL.
+
+SUBTITLE(More reading)
+<p>
+ The mentioned libraries: <a href="https://www.openssl.org/">OpenSSL</a>, <a
+ href="https://www.gnutls.org/">GnuTLS</a>, <a
+ href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS">NSS</a>, <a
+ href="https://www.wolfssl.com/">wolfSSL</a>, <a
+ href="https://tls.mbed.org">mbed TLS</a>, <a
+ href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms678421(v=vs.85).aspx">Secure Channel</a>, <a href="https://developer.apple.com/documentation/security/secure_transport">Secure Transport</a>.
+
+<p> More comparisons in the extensive <a
+href="https://en.wikipedia.org/wiki/Comparison_of_TLS_Implementations">feature-by-feature
+comparison on wikipedia</a>.
+
+<p>
+ curl's documentation of <a href="https://github.com/curl/curl/blob/master/docs/SSL-PROBLEMS.md">SSL problems</a>.
+
+<p>
+ Please <a href="mailto:curl-web@haxx.se">mail us</a> corrections if this
+ table is incorrect, or tell us other features we should compare!
+
+#include "_footer.html"
+</BODY>
+</HTML>

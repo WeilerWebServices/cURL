@@ -1,0 +1,38 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>Code style</TITLE>
+#include "css.t"
+<style type="text/css">
+code {
+  background-color: #ffffe0;
+  font-size: 140%;
+  width: 90%;
+  margin-left: 5%;
+  display: inline-block;
+}
+
+</style>
+</HEAD>
+
+#define DEVEL_CODE_STYLE
+#define CURL_URL dev/code-style.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE2(Development, "/dev/", code style)
+
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="code-review.html">Code review</a>
+<br><a href="contribute.html">Contribute</a>
+<br><a href="/mail/">Mailing Lists</a>
+<br><a href="internals.html">Internals</a>
+</div>
+
+#include "code-style.gen"
+#include "_footer.html"
+
+</BODY>
+</HTML>
+

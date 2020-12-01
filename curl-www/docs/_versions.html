@@ -1,0 +1,29 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - Versions</TITLE>
+#include "css.t"
+</HEAD>
+
+#define CURL_DOCS
+#define REL_DOCS
+#define DOCS_VERSIONS
+#define CURL_URL docs/versions.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(Docs, "/docs/", Releases, "/docs/reldocs.html", Version numbering)
+
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="/changes.html">Changelog</a>
+<br><a href="/docs/releases.html">Release Table</a>
+</div>
+
+#include "versions.gen"
+
+#include "_footer.html"
+
+</BODY>
+</HTML>
+

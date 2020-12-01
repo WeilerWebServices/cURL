@@ -1,0 +1,26 @@
+#include "_doctype.html"
+<html>
+<head> <title>curl - Automatic Builds</title>
+#include "css.t"
+<script type="text/javascript" src="dev.js"></script>
+</head>
+
+#define DEVEL_BUILDS
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE2(Development, "/dev/", Automatic Builds)
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="howto.html">Howto autobuild</a>
+<br><a href="https://ci.appveyor.com/project/curlorg/curl">AppVeyor CI builds</a>
+<br><a href="https://travis-ci.org/curl/curl/builds">Travis CI builds</a>
+</div>
+
+TITLE(Automatic Builds)
+
+#include "explainopts.t"
+#include "table.t"
+#include "_footer.html"
+</body> </html>

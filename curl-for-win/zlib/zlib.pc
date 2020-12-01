@@ -1,0 +1,13 @@
+prefix=C:/Program Files/Git/usr/local
+exec_prefix=C:/Program Files/Git/usr/local
+libdir=C:/Program Files/Git/usr/local/lib
+sharedlibdir=C:/Program Files/Git/usr/local/lib
+includedir=C:/Program Files/Git/usr/local/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.11
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

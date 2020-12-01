@@ -1,0 +1,44 @@
+#include "_doctype.html"
+<html><head>
+<title>Curl -- Search this site</title>
+#include "css.t"
+</head>
+
+#define CURL_SEARCH
+#define CURL_URL search.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE1(Search)
+TITLE(Search This Site)
+<p>
+#include "sitesearch.t"
+SUBTITLE(Search Hints)
+<p>
+ A few things to keep in mind to improve your searches on how you read the
+ results from your searches:
+<ul>
+
+<li> The contents of this site is frequently indexed by Google, but you should
+ still not assume that you will be able to search on very recent additions to
+ the site.
+
+<li> There are more than 27,000 HTML pages at this site. Specify your search
+ with several keywords for better results.
+
+<li> The search results may include mailing list postings that may contain
+ details and inaccurate facts. We keep all mailing list postings ever posted
+ and some may be a bit out-of-date or possibly at times they were already
+ incorrect when they were posted the first time!
+
+<li> The search results might offer links to source code, which could be
+ a bit confusing to users not used to such reading.
+
+</ul>
+
+<p>
+#include "_footer.html"
+</body></html>
+
+

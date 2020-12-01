@@ -1,0 +1,44 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - video presentations</TITLE>
+#include "css.t"
+<style type="text/css">
+.contents {
+  max-width: 95%;
+}
+.video {
+    width: 250px;
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    height: 22em;
+}
+</style>
+</HEAD>
+
+#define CURL_DOCS
+#define PROJ_DOCS
+#define DOCS_VIDEO
+#define CURL_URL docs/video.html
+
+#include "docs/_menu.html"
+#include "setup.t"
+
+WHERE2(Docs, "/docs/", Video presentations)
+
+TITLE(Video presentations)
+#if 0
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="/docs/book.html">Everything curl</a>
+</div>
+<p>
+#endif
+<p>
+  Video presentations on and about curl or related technologies.
+
+#include "videos.gen"
+
+#include "_footer.html"
+</BODY>
+</HTML>

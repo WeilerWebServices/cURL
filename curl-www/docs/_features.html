@@ -1,0 +1,26 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - List of Features</TITLE>
+#include "css.t"
+</HEAD>
+
+#define CURL_DOCS
+#define PROJ_DOCS
+#define DOCS_FEATURES
+#define CURL_URL docs/features.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(Docs, "/docs/", Project, "/docs/projdocs.html", Features)
+
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="comparison-table.html">feature comparison table</a>
+</div>
+#include "features.gen"
+#include "_footer.html"
+
+</BODY>
+</HTML>
+

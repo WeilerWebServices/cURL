@@ -1,0 +1,25 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl_multi_add_handle</TITLE>
+#include "css.t"
+#include "manpage.t"
+</HEAD>
+
+#define RAW_FILE curl_multi_add_handle.3
+#define BUG_TITLE curl_multi_add_handle%20man%20page:
+#define MENU_MULTI
+#define LIBCURL_DOCS
+#define DOCS_MULTI_ADD_HANDLE
+#define CURL_URL libcurl/c/curl_multi_add_handle.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(libcurl, "/libcurl/", API, "/libcurl/c/", libcurl)
+TITLE(curl_multi_add_handle - add an easy handle to a multi session)
+#include "libcurl-related.t"
+#include "curl_multi_add_handle.gen"
+#include "_footer.html"
+
+</BODY>
+</HTML>

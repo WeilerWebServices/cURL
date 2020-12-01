@@ -1,0 +1,55 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - Vulnerability Table</TITLE>
+#include "css.t"
+
+<style type="text/css">
+.contents {
+  max-width: 95%;
+  overflow: auto;
+}
+a.vuln {
+    color: black;
+    font-size: 70%;
+    text-decoration: none;
+}
+a.vuln:hover {
+    color: #ffffff;
+    background-color: #093754;
+}
+</style>
+</HEAD>
+
+#define CURL_DOCS
+#define REL_DOCS
+#define DOCS_VULNTABLE
+#define CURL_URL docs/vulnerabilities.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(Docs, "/docs/", Releases, "/docs/reldocs.html", Vulnerabilities)
+
+TITLE(curl and libcurl vulnerabilities)
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="security.html">Security problems</a>
+<br><a href="/dev/secprocess.html">Security process</a>
+<br><a href="faq.html">FAQ</a>
+<br><a href="/changes.html">Changelog</a>
+<br><a href="releases.html">Releaselog</a>
+</div>
+
+<p>
+ This is the exhaustive list of <i>all</i> curl versions ever released and
+ which releases that are vulnerable to each publicly
+ disclosed <a href="security.html">vulnerability</a>!
+<p>
+ Each version number link shows a vulnerability summary for that specific
+ release. <a href="vulnerabilities.html">View only the 25 most recent
+ releases</a>.
+<p>
+#include "vuln0.gen"
+
+#include "_footer.html"
+</body> </html>

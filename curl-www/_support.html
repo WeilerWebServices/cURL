@@ -1,0 +1,59 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - Commercial Support</TITLE>
+#include "css.t"
+</HEAD>
+
+#define FEATURE <td bgcolor="#ffff00" align="center">yes</td>
+#define MISSING <td align="center">no</td>
+#define UNKNOWN <td align="center"><font color="#ff0000">???</font></td>
+#define NEWEVEN <tr valign="middle">
+#define NEWODD  <tr valign="middle" bgcolor="#e0e0e0">
+#define ENDLINE </tr>
+
+#define CURL_SUPPORT
+#define CURL_URL support.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE1(Support)
+
+TITLE(Companies and Persons Offering Commercial Support)
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="/mail/">Mailing Lists</a>
+<br><a href="/docs/">Docs</a>
+<br><a href="/docs/faq.html">FAQ</a>
+</div>
+<p>
+ <b>When you need the help only commercial companies give you.</b>
+<p>
+ Only companies that sponsor the project are listed here.
+
+SUBTITLE(Companies Offering curl Support)
+<p>
+ These are companies that offer curl support doing installation, customizing
+ or even extending it to your every need or simply writing/improving scripts
+ and programs using curl/libcurl.
+
+SUBTITLE(<a href="https://www.wolfssl.com/">wolfSSL</a>)
+<p> US and International
+<p>
+ At wolfSSL we offer full commercial support on curl done by the masters of
+ curl. We can handle customization, ports to new operating systems, feature
+ development, patch maintenance, bug fixing, upstreaming, training, security
+ scanning your curl use and more - with several different support options from
+ basic up to full 24/7 support.
+<p>
+ <a href="https://www.wolfssl.com/contact/">Get in touch!</a>
+
+SUBTITLE(<a href="http://www.schrenk.com/">Michael Schrenk Ltd.</a>)
+<p>Minneapolis, Minnesota USA
+<p>
+Specialize in writing curl-based web-bots, spiders and web agents that provide
+real-time information for businesses.
+
+#include "_footer.html"
+</BODY>
+</HTML>

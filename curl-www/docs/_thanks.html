@@ -1,0 +1,47 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - THANKS</TITLE>
+#include "css.t"
+<link rel="STYLESHEET" type="text/css" href="thanks.css">
+</HEAD>
+
+#define CURL_DOCS
+#define WHO_DOCS
+#define DOCS_THANKS
+#define CURL_URL docs/thanks.html
+
+#include "_menu.html"
+#include "setup.t"
+#include "thanksnum.gen"
+
+WHERE3(Docs, "/docs/", Who and Why, "/docs/whodocs.html", Thanks)
+
+TITLE(Thanks for Your Contribution to the curl Project!)
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="/dev/contribute.html">Contribute</a>
+<br><a href="/docs/copyright.html">License</a>
+<br><a href="/docs/bugs.html">Report Bugs</a>
+<br><a href="/sponsors.html">Sponsors</a>
+</div>
+
+<p>
+ This project has been alive for many years. At least __THANKSNUM__ persons
+have provided code, feedback, advice etc that have improved curl. curl and
+libcurl would not be what they are today without the help of friendly people
+like this.
+
+<p>
+ If you have helped out but are missing in this list,
+ please <a href="mailto:curl-web@haxx.se">tell us</a>! Note that this list may
+ not include contributors who have used obvious fake names or strange aliases.
+ 
+<p>
+
+#include "thanks.gen"
+
+#include "_footer.html"
+
+</BODY>
+</HTML>
+

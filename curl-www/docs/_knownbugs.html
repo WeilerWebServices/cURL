@@ -1,0 +1,33 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - Known Bugs</TITLE>
+#include "css.t"
+</HEAD>
+
+#define CURL_DOCS
+#define PROJ_DOCS
+#define DOCS_KNOWNBUGS
+#define CURL_URL docs/knownbugs.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(Docs, "/docs/", Project, "/docs/projdocs.html", Known Bugs)
+
+TITLE(Known Bugs)
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="/dev/deprecate.html">Deprecate</a>
+<br><a href="bugs.html">How To Report Bugs</a>
+<br><a href="todo.html">TODO</a>
+</div>
+<p>
+ This is the document 'docs/KNOWN_BUGS' from the curl release archive.
+
+#include "knownbugs.gen"
+
+#include "_footer.html"
+
+</BODY>
+</HTML>
+

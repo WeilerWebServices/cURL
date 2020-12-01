@@ -1,0 +1,25 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl_multi_wakeup</TITLE>
+#include "css.t"
+#include "manpage.t"
+</HEAD>
+
+#define RAW_FILE curl_multi_wakeup.3
+#define BUG_TITLE curl_multi_wakeup%20man%20page:
+#define MENU_MULTI
+#define LIBCURL_DOCS
+#define DOCS_MULTI_WAKEUP
+#define CURL_URL libcurl/c/curl_multi_wakeup.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(libcurl, "/libcurl/", API, "/libcurl/c/", libcurl)
+TITLE(curl_multi_wakeup - wakes up a sleeping curl_multi_poll call)
+#include "libcurl-related.t"
+#include "curl_multi_wakeup.gen"
+#include "_footer.html"
+
+</BODY>
+</HTML>

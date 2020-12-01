@@ -1,0 +1,86 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>libcurl - Libwww Comparison</TITLE>
+#include "css.t"
+</HEAD>
+
+#define LIBCURL_LIBWWW
+#define CURL_URL libcurl/libwww.html
+
+#include "setup.t"
+#include "table.t"
+#include "_menu.html"
+
+WHERE2(libcurl, "/libcurl/", Libwww Comparison)
+
+TITLE(Notes About Libwww compared to libcurl)
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="/docs/features.html">libcurl Features</a>
+<br><a href="competitors.html">Compare HTTP Libraries</a>
+<br><a href="wininet.html">WinInet comparison</a>
+</div>
+
+<p>
+ These are only some quick notes. If you have additional experiencies and
+comments you want to share with the world, we're all ears!
+
+<ul>
+
+ <li> libcurl is (far) more portable
+
+ <li> libcurl is supported and has a living community (compare traffic on the
+ mailing lists, release frequency or similar)
+
+ <li> programs need less code to transfer files using libcurl than a libwww-
+ based equivalent
+
+ <li> libcurl is thread-safe, libwww is not
+
+ <li> libcurl has a different feature-set and offers several features not
+ present in libwww, like several HTTP authentication types and gzip support
+
+ <li> libcurl supports more protocols
+
+ <li> libwww offers caching and HTML parsing, which libcurl doesn't
+
+</ul>
+
+<p>
+ Quote from a usenet posting by <a
+ href="https://groups.google.com/groups?q=libcurl&hl=en&lr=&scoring=d&selm=%23Uj9HDaxEHA.3336%40TK2MSFTNGP11.phx.gbl&rnum=1">Carl Daniel</a>:
+
+<div class="quote">
+<i>
+Having used both, I'd recommend libcurl and definitely not libwww.
+<p>
+libcurl is easy to use and gives good performance.  libwww is a nightmare to
+use, performs poorly (no overlapped I/O support, for example), and is
+practically undocumented (on top of which it's a very complex library).
+libwww is really a platform for network protocol development, not a library
+for basic access to well known network protocol stacks.
+</i>
+</div>
+<p>
+ Quote from the libwww-mailing list by <a href="https://lists.w3.org/Archives/Public/www-lib/2004OctDec/0013.html">Akritidis Xristoforos</a>:
+<div class="quote">
+<i>
+I devoted a full man-month trying to understand libwww, writing a function of
+intermediate complexity (supporting post requests, xml parsing, authentication
+etc.)  and figuring out that the problems I encountered were due to libwww and
+not my code.
+<p>
+I switched to libcurl, rewrote the same code in a week and haven't
+looked back.
+<p>
+Perhaps this library has some features that libcurl doesn't, though I didn't
+have to use them for my needs.  However, for libwww to survive, someone has to
+focus on these features and let libcurl do the rest.
+<p>
+Personally, I can't find any reason to suggest libwww to anyone.
+</i>
+</div>
+
+#include "_footer.html"
+</BODY>
+</HTML>

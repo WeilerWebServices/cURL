@@ -1,0 +1,20 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - the latest packages!</TITLE>
+#include "css.t"
+</HEAD>
+
+#define CURL_LATEST
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE2(Download, "/download.html", Latest Packages)
+
+TITLE(The Latest Packages from Here or Mirrors)
+
+<!--#include virtual="/latest.t" -->
+
+#include "_footer.html"
+</BODY>
+</HTML>

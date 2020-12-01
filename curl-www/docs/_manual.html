@@ -1,0 +1,43 @@
+#include "_doctype.html"
+<html>
+<head> <TITLE>curl - Tutorial</TITLE>
+#include "css.t"
+
+<style>
+pre {
+    margin-left: 2em;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #093754;
+    color: #ffffff;
+}
+</style>
+</head>
+
+#define CURL_DOCS
+#define TOOL_DOCS
+#define DOCS_TUTORIAL
+#define CURL_URL docs/manual.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(Docs, "/docs/", Tool Documentation, "/docs/tooldocs.html", Manual)
+
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="manpage.html">Man Page</a>
+<br><a href="faq.html">FAQ</a>
+</div>
+
+#undef DATE
+#undef SIZE
+
+#include "manual.gen"
+
+#include "_footer.html"
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,26 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl_multi_info_read</TITLE>
+#include "css.t"
+#include "manpage.t"
+</HEAD>
+
+#define RAW_FILE curl_multi_info_read.3
+#define BUG_TITLE curl_multi_info_read%20man%20page:
+#define MENU_MULTI
+#define LIBCURL_DOCS
+#define DOCS_MULTI_INFO_READ
+#define CURL_URL libcurl/c/curl_multi_info_read.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(libcurl, "/libcurl/", API, "/libcurl/c/", libcurl)
+
+TITLE(curl_multi_info_read - read multi stack info)
+#include "libcurl-related.t"
+#include "curl_multi_info_read.gen"
+#include "_footer.html"
+
+</BODY>
+</HTML>

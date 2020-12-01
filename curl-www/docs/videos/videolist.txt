@@ -1,0 +1,596 @@
+VIDEO curl now and then
+EVENT curl-up 2017
+URL https://curl.se/video/curlup-2017/2017-03-18_01_Daniel_Stenberg_Curl_now_and_then_keynote.mp4
+THUMB curl-now-and-then-2017.jpg
+THUMBSIZE width="250" height="156"
+DURATION 41 minutes
+DATE 2017-03-18
+SLIDES https://curl.se/video/curlup-2017/2017-03-18_01_Daniel_Stenberg_Curl_now_and_then_keynote.pdf
+WHO Daniel Stenberg
+TAGS curl, curl project
+DESC Welcome to curl up 2017 and talk about the curl project and where it is right now
+ENDOFVIDEO
+
+VIDEO curl for network debugging
+EVENT curl-up 2017
+URL https://curl.se/video/curlup-2017/2017-03-18_02_Aleksandar_Lazic_curl_for_network_debugging.mp4
+THUMB curl-for-network-debugger-2017.jpg
+THUMBSIZE width="250" height="188"
+DURATION 7 minutes
+DATE 2017-03-18
+SLIDES https://curl.se/video/curlup-2017/2017-03-18_02_Aleksandar_Lazic_curl_for_network_debugging.pdf
+WHO Aleksandar Lazic
+TAGS debug, command line
+DESC How to use curl to debug networks
+ENDOFVIDEO
+
+VIDEO The curl test suite
+EVENT curl-up 2017
+URL https://curl.se/video/curlup-2017/2017-03-18_03_Dan_Fandrich_curl_test_suite.mp4
+THUMB curl-test-suite-2017.jpg
+THUMBSIZE width="250" height="188"
+DURATION 54 minutes
+DATE 2017-03-18
+SLIDES https://curl.se/video/curlup-2017/2017-03-18_03_Dan_Fandrich_curl_test_suite.pdf
+WHO Dan Fandrich
+TAGS test suite, testing
+DESC The curl test suite and how testing is done in the project
+ENDOFVIDEO
+
+VIDEO Creating console oriented web sites
+EVENT curl-up 2017
+URL https://curl.se/video/curlup-2017/2017-03-18_04_Igor_Chubin_creating_console_oriented_web_sites.mp4
+THUMB creating-console-websites-2017.jpg
+THUMBSIZE width="250" height="188"
+DURATION 42 minutes
+DATE 2017-03-18
+WHO Igor Chubin
+DESC Console oriented web services, suitable for curl
+ENDOFVIDEO
+
+VIDEO Wrapping curl
+EVENT curl-up 2017
+URL https://curl.se/video/curlup-2017/2017-03-18_05_Christian_Schmitz_Wrapping_curl.mp4
+THUMB wrapping-curl-2017.jpg
+THUMBSIZE width="250" height="188"
+DURATION 11 minutes
+DATE 2017-03-18
+WHO Christian Schmitz
+DESC Experiences in writing a libcurl wrapper
+ENDOFVIDEO
+
+VIDEO The curl web site
+EVENT curl-up 2017
+URL https://curl.se/video/curlup-2017/2017-03-18_06_Dan_Fandrich_Daniel_Stenberg_curl_website.mp4
+THUMB curl-website-2017.jpg
+THUMBSIZE width="250" height="188"
+DURATION 29 minutes
+DATE 2017-03-18
+WHO Dan Fandrich and Daniel Stenberg
+DESC The curl web site and infrastructure
+ENDOFVIDEO
+
+VIDEO How Google uses curl
+EVENT curl-up 2017
+URL https://curl.se/video/curlup-2017/2017-03-18_07_Tony_Aiuto_How_Google_uses_curl.mp4
+THUMB how-google-uses-curl-2017.jpg
+THUMBSIZE width="250" height="188"
+DURATION 20 minutes
+DATE 2017-03-18
+SLIDES https://curl.se/video/curlup-2017/2017-03-18_07_Tony_Aiuto_How_Google_uses_curl.pdf
+WHO Tony Aiuto
+DESC How Google builds, runs, tests and uses curl
+ENDOFVIDEO
+
+VIDEO Life of a distro hacker
+EVENT curl-up 2017
+URL https://curl.se/video/curlup-2017/2017-03-18_08_Kamil_Dudka_Life_of_a_distro_hacker.mp4
+THUMB life-of-a-distro-hacker-2017.jpg
+THUMBSIZE width="250" height="188"
+DURATION 30 minutes
+DATE 2017-03-18
+SLIDES https://curl.se/video/curlup-2017/2017-03-18_08_Kamil_Dudka_Life_of_a_distro_hacker.pdf
+WHO Kamil Dudka
+DESC How Red Hat builds and distributes curl
+ENDOFVIDEO
+
+VIDEO Advanced HTTP scripting with curl
+EVENT curl-up 2017
+URL https://curl.se/video/curlup-2017/2017-03-19_01_Dan_Fandrich_Advanced_HTTP_Scripting_with_curl.mp4
+THUMB advanced-http-scripting-2017.jpg
+THUMBSIZE width="250" height="188"
+DURATION 33 minutes
+DATE 2017-03-19
+WHO Dan Fandrich
+DESC How to use curl to do HTTP tricks
+ENDOFVIDEO
+
+VIDEO The curl book
+EVENT curl-up 2017
+URL https://curl.se/video/curlup-2017/2017-03-19_02_Daniel_Stenberg_curlbook.mp4
+THUMB the-curl-book-2017.jpg
+THUMBSIZE width="250" height="156"
+DURATION 8 minutes
+DATE 2017-03-19
+WHO Daniel Stenberg
+DESC Everything curl, the book
+ENDOFVIDEO
+
+VIDEO Web transport, today and tomorrow
+EVENT curl-up 2017
+URL https://curl.se/video/curlup-2017/2017-03-19_03_Daniel_Stenberg_web_transport.mp4
+THUMB web-transport-2017.jpg
+THUMBSIZE width="250" height="156"
+DURATION 58 minutes
+DATE 2017-03-19
+WHO Daniel Stenberg
+DESC Current and coming web transport standards and changes
+ENDOFVIDEO
+
+VIDEO Why Red Hat switched to NSS and still uses it
+EVENT curl-up 2017
+URL https://curl.se/video/curlup-2017/2017-03-19_04_Kamil_Dudka_Why_Red_Hat_switched_to_NSS_and_still_uses_it.mp4
+THUMB why-redhat-switched-to-nss-2017.jpg
+THUMBSIZE width="250" height="188"
+DURATION 23 minutes
+DATE 2017-03-19
+SLIDES https://curl.se/video/curlup-2017/2017-03-19_04_Kamil_Dudka_Why_Red_Hat_switched_to_NSS_and_still_uses_it.pdf
+WHO Kamil Dudka
+DESC About Red Hat's decision to use NSS for curl and others
+ENDOFVIDEO
+
+VIDEO Websocket support for curl
+EVENT curl-up 2017
+URL https://curl.se/video/curlup-2017/2017-03-19_05_Michael_Kaufmann_Websocket_support_for_curl.mp4
+THUMB websocket-support-2017.jpg
+THUMBSIZE width="250" height="188"
+DURATION 16 minutes
+DATE 2017-03-19
+WHO Michael Kaufmann
+DESC Why and how curl could support Websockets
+ENDOFVIDEO
+
+VIDEO Staying up to date on a legacy platform
+EVENT curl-up 2017
+URL https://curl.se/video/curlup-2017/2017-03-19_06_Dagobert_Michelsen_Staying_up_to_date_on_a_legacy_platform.mp4
+THUMB up-to-date-legacy-2017.jpg
+THUMBSIZE width="250" height="188"
+DURATION 19 minutes
+DATE 2017-03-19
+WHO Dagobert Michelsen
+DESC About maintaining curl for Solaris
+ENDOFVIDEO
+
+VIDEO Apache HTTP/2 testing
+EVENT curl-up 2017
+URL https://curl.se/video/curlup-2017/2017-03-19_07_Stefan_Eissing_Apache_HTTP2_testing.mp4
+THUMB apache-http2-testing.jpg
+THUMBSIZE width="250" height="188"
+DURATION 20 minutes
+DATE 2017-03-19
+WHO Stefan Eissing
+DESC How he uses curl to test Apache's HTTP/2 support
+ENDOFVIDEO
+
+VIDEO Doing HTTP/2 with libcurl
+EVENT curl-up 2017
+URL https://curl.se/video/curlup-2017/2017-03-19_08_Daniel_Stenberg_http2_curl.mp4
+THUMB http2-curl.jpg
+THUMBSIZE width="250" height="156"
+DURATION 39 minutes
+DATE 2017-03-19
+WHO Daniel Stenberg
+DESC How to do HTTP/2 requests with libcurl (missing the first part of the talk)
+ENDOFVIDEO
+
+VIDEO SPNEGO, Kerberos, GSS-API and Negotiate support and how to make them better
+EVENT curl-up 2017
+URL https://curl.se/video/curlup-2017/2017-03-19_09_Isaac_Boukris_SPNEGO_KERBEROS_GSS-API_and_Negotiate_support.mp4
+THUMB negotiate-support.jpg
+THUMBSIZE width="250" height="188"
+DURATION 33 minutes
+DATE 2017-03-19
+WHO Isaac Boukris
+DESC Kerberos and Negotiate support
+ENDOFVIDEO
+
+VIDEO Containerized curl testing
+EVENT curl-up 2018
+URL https://curl.se/video/curlup-2018/2018-04-14_Dan-Fandrich-containerized-curl-testing.webm
+SLIDES https://curl.se/video/curlup-2018/2018-04-14_Dan-Fandrich-containerized-curl-testing.pdf
+THUMB containerized-curl-testing-2018.jpg
+THUMBSIZE width="250" height="188"
+DURATION 54 minutes
+DATE 2018-04-14
+WHO Dan Fandrich
+DESC Efforts to enhance the test architecture
+ENDOFVIDEO
+
+VIDEO curl CI
+EVENT curl-up 2018
+URL https://curl.se/video/curlup-2018/2018-04-14_Daniel-Stenberg-curl-ci.webm
+SLIDES https://curl.se/video/curlup-2018/2018-04-14_Daniel-Stenberg-curl-ci.pdf
+THUMB curl-ci-2018.jpg
+THUMBSIZE width="250" height="141"
+DURATION 22 minutes
+DATE 2018-04-14
+WHO Daniel Stenberg
+DESC The curl CI setup and how it works
+ENDOFVIDEO
+
+VIDEO Welcome to curl up
+EVENT curl-up 2018
+URL https://curl.se/video/curlup-2018/2018-04-14_Daniel-Stenberg-welcome-to-curlup.webm
+SLIDES https://curl.se/video/curlup-2018/2018-04-14_Daniel-Stenberg-welcome-to-curlup.pdf
+THUMB welcome-to-curlup-2018.jpg
+THUMBSIZE width="250" height="141"
+DURATION 1h25
+DATE 2018-04-14
+WHO Daniel Stenberg
+DESC The state of the curl project 2018
+ENDOFVIDEO
+
+VIDEO curl - a hobby project with a billion users
+EVENT Google Tech Talk Meetup
+URL https://youtu.be/Lq2ksox21Eg
+SLIDES 2015-curl-hobby-billion-users-Google.pdf
+THUMB hobby-project-with-a-billion.jpg
+THUMBSIZE width="250" height="140"
+DURATION 1h11
+DATE 2015-08-26
+WHO Daniel Stenberg
+DESC curl is like a swiss army-knife for HTTP and internet transfers. Daniel takes us through how it started, how it works and why it never gets done
+ENDOFVIDEO
+
+VIDEO You know what's cool? Running on billions of devices
+EVENT FOSDEM 2017
+URL https://youtu.be/T31GvxCtrL8
+SLIDES FOSDEM-2017-curl.pdf
+THUMB you-know-whats-cool-2017.jpg
+THUMBSIZE width="250" height="141"
+DURATION 50 minutes
+DATE 2017-02-04
+WHO Daniel Stenberg
+DESC All about curl, from inception to being everywhere
+ENDOFVIDEO
+
+VIDEO Internet all the things - using curl in your device
+EVENT FOSDEM 2015
+URL https://mirrors.dotsrc.org/fosdem/2015/devroom-embedded/curl_device.mp4
+SLIDES 2015-curl-FOSDEM-internet-all-the-things.pdf
+THUMB internet-all-the-things-2015.jpg
+THUMBSIZE width="250" height="141"
+DURATION 26 minutes
+DATE 2015-02-01
+WHO Daniel Stenberg
+DESC libcurl is the world's most used and most popular internet transfer library, already used in every imaginable sort of embedded device out there.
+ENDOFVIDEO
+
+VIDEO Console oriented web services
+EVENT curl-up 2018
+URL https://curl.se/video/curlup-2018/2018-04-14_Igor-Chublin-console-oriented-services.webm
+THUMB console-services-2018.jpg
+THUMBSIZE width="250" height="141"
+DURATION 41 minutes
+DATE 2018-04-14
+WHO Igor Chubin
+DESC How to build console oriented web services and why
+ENDOFVIDEO
+
+VIDEO How Red Hat distributes curl
+EVENT curl-up 2018
+URL https://curl.se/video/curlup-2018/2018-04-14_Kamil-Dudka-redhat-distributes-curl.webm
+SLIDES https://curl.se/video/curlup-2018/2018-04-14_Kamil-Dudka-redhat-distributes-curl.pdf
+THUMB redhat-distributes-curl-2018.jpg
+THUMBSIZE width="250" height="173"
+DURATION 18 minutes
+DATE 2018-04-14
+WHO Kamil Dudka
+DESC How Red Hat distributes curl. What has changed since curl up 2017
+ENDOFVIDEO
+
+VIDEO libcurl in Apache: the culprit
+EVENT curl-up 2018
+URL https://curl.se/video/curlup-2018/2018-04-14_Stefan-Eissing-libcurl-in-apache.webm
+THUMB libcurl-in-apache.jpg
+THUMBSIZE width="250" height="141"
+DURATION 16 minutes
+DATE 2018-04-14
+WHO Stefan Eissing
+DESC libcurl is being used by Apache httpd
+ENDOFVIDEO
+
+VIDEO google and proxies
+EVENT curl-up 2018
+URL https://curl.se/video/curlup-2018/2018-04-14_Tony-Aiuto-google-and-proxies.webm
+SLIDES https://curl.se/video/curlup-2018/2018-04-14_Tony-Aiuto-google-and-proxies.pdf
+THUMB google-and-proxies-2018.jpg
+THUMBSIZE width="250" height="141"
+DURATION 23 minutes
+DATE 2018-04-14
+WHO Tony Aiuto
+DESC How Google uses proxies with curl
+ENDOFVIDEO
+
+VIDEO curl and DoH
+EVENT curl-up 2018
+URL https://curl.se/video/curlup-2018/2018-04-15_Daniel-Stenberg-curl-doh.webm
+SLIDES https://curl.se/video/curlup-2018/2018-04-15_Daniel-Stenberg-curl-doh.pdf
+THUMB curl-doh-2018.jpg
+THUMBSIZE width="250" height="141"
+DURATION 47 minutes
+DATE 2018-04-15
+WHO Daniel Stenberg
+DESC DNS-over-HTTPS and how curl will do it
+ENDOFVIDEO
+
+VIDEO URLs
+EVENT curl-up 2018
+URL https://curl.se/video/curlup-2018/2018-04-15_Daniel-Stenberg-urls.webm
+SLIDES https://curl.se/video/curlup-2018/2018-04-15_Daniel-Stenberg-urls.pdf
+THUMB urls-2018.jpg
+THUMBSIZE width="250" height="141"
+DURATION 44 minutes
+DATE 2018-04-15
+WHO Daniel Stenberg
+DESC Discuss the lack of proper URL specifications and where that takes curl
+ENDOFVIDEO
+
+VIDEO QUIC and curl
+EVENT curl-up 2018
+URL https://curl.se/video/curlup-2018/2018-04-15_Daniel_Stenberg-curl-quic.webm
+SLIDES https://curl.se/video/curlup-2018/2018-04-15_Daniel_Stenberg-curl-quic.pdf
+THUMB curl-quic-2018.jpg
+THUMBSIZE width="250" height="141"
+DURATION 43 minutes
+DATE 2018-04-15
+WHO Daniel Stenberg
+DESC Explaining QUIC and how curl can be made to support it
+ENDOFVIDEO
+
+VIDEO curl and a day in my life
+EVENT curl-up 2018
+URL https://curl.se/video/curlup-2018/2018-04-15_Fernando-Bitti-Loureiro-a-day-in-my-life.webm
+SLIDES https://curl.se/video/curlup-2018/2018-04-15_Fernando-Bitti-Loureiro-a-day-in-my-life.pdf
+THUMB a-day-in-my-life-2018.jpg
+THUMBSIZE width="250" height="141"
+DURATION 35 minutes
+DATE 2018-04-15
+WHO Fernando Bitti Loureiro
+DESC How I use curl every day
+ENDOFVIDEO
+
+VIDEO alt-svc for the people
+EVENT curl-up 2018
+URL https://curl.se/video/curlup-2018/2018-04-15_Lucas_Pardue-altsvc-for-the-people.webm
+SLIDES https://curl.se/video/curlup-2018/2018-04-15_Lucas_Pardue-altsvc-for-the-people.pdf
+THUMB altsvc-for-the-people-2018.jpg
+THUMBSIZE width="250" height="141"
+DURATION 35 minutes
+DATE 2018-04-15
+WHO Lucas Pardue
+DESC Why there's an Alt-Svc header, how it works and how it changes everything
+ENDOFVIDEO
+
+VIDEO Fuzzing curl
+EVENT curl-up 2018
+URL https://curl.se/video/curlup-2018/2018-04-15_Max-Dymond-fuzzing-curl.webm
+SLIDES https://curl.se/video/curlup-2018/2018-04-15_Max-Dymond-fuzzing-curl.pdf
+THUMB fuzzing-curl-2018.jpg
+THUMBSIZE width="250" height="141"
+DURATION 31 minutes
+DATE 2018-04-15
+WHO Max Dymond
+DESC How we fuzz curl
+ENDOFVIDEO
+
+VIDEO twenty years of curl development - by gource
+URL https://youtu.be/Un73TaG3reg
+THUMB gource-2019.jpg
+THUMBSIZE width="250" height="141"
+DURATION 23 minutes
+DATE 2019-02-08
+WHO Daniel Stenberg
+DESC This is the curl and libcurl source tree development visualized with the gource tool. From December 1999 to February 7 2019.
+ENDOFVIDEO
+
+VIDEO Writing an effective curl test
+EVENT curl-up 2019
+URL https://curl.se/video/curlup-2019/2019-03-30_Dan-Fandrich-writing-an-effective-curl-test.webm
+SLIDES https://curl.se/video/curlup-2019/2019-03-30_Dan-Fandrich-writing-an-effective-curl-test.pdf
+THUMB effective-test-case-2019.jpg
+THUMBSIZE width="250" height="188"
+DURATION 40 minutes
+DATE 2019-03-30
+WHO Dan Fandrich
+TAGS test suite, testing
+DESC How to decide on the kind of test case to write for the curl project that is both effective and matches your goals
+ENDOFVIDEO
+
+VIDEO The state of curl 2019
+EVENT curl-up 2019
+URL https://youtu.be/1y07i0jkAII
+SLIDES https://curl.se/video/curlup-2019/2019-03-30-state-of-curl.pdf
+THUMB state-of-curl-2019-jpg
+THUMBSIZE width="250" height="140"
+DURATION 1h50
+DATE 2019-03-30
+WHO Daniel Stenberg
+DESC The state of the curl project 2019. Stats, numbers and status checks.
+ENDOFVIDEO
+
+VIDEO Deprecating legacy crap
+EVENT curl-up 2019
+URL https://youtu.be/d9Yc3UNZjfs
+SLIDES https://curl.se/video/curlup-2019/2019-03-30-depcrecating-legacy.pdf
+THUMB deprecating-legacy.jpg
+THUMBSIZE width="250" height="140"
+DURATION 12 minutes
+DATE 2019-03-30
+WHO Daniel Stenberg
+DESC How to deprecate things, what we're deprecating and how we introduce experimental features.
+ENDOFVIDEO
+
+VIDEO Governance and money 
+EVENT curl-up 2019
+URL https://youtu.be/a9UpMuYTTrs
+SLIDES https://curl.se/video/curlup-2019/2019-03-30-governance.pdf
+THUMB governance-2019.jpg
+THUMBSIZE width="250" height="142"
+DURATION 18 minutes
+DATE 2019-03-30
+WHO Daniel Stenberg
+DESC Governance and money in the project. Joining SFC, sponsors etc.
+ENDOFVIDEO
+
+VIDEO curlator: a framework for console services
+EVENT curl-up 2019
+URL https://youtu.be/XZBvzyhapHM
+THUMB curlator-2019.jpg
+THUMBSIZE width="250" height="141"
+DURATION 20 minutes
+DATE 2019-03-30
+WHO Igor Chubin
+DESC Create console-friendly web services with curlator!
+ENDOFVIDEO
+
+VIDEO HTTP/3 (QUIC): the details
+EVENT curl-up 2019
+URL https://youtu.be/mDc2kHPtavE
+SLIDES https://curl.se/video/curlup-2019/2019-03-31-Robin-Marx-QUIC-details.pdf
+THUMB quic-details-2019.jpg
+THUMBSIZE width="250" height="141"
+DURATION 1h03
+DATE 2019-03-31
+WHO Robin Marx
+DESC In-depth description of QUIC details and the HTTP/3 protocol.
+ENDOFVIDEO
+
+VIDEO HTTP/3 in curl
+EVENT curl-up 2019
+URL https://youtu.be/WfeXVJAF2jc
+SLIDES https://curl.se/video/curlup-2019/2019-03-31-Daniel-Stenberg-http3-in-curl.pdf
+THUMB http3-in-curl-2019.jpg
+THUMBSIZE width="250" height="135"
+DURATION 24 minutes
+DATE 2019-03-31
+WHO Daniel Stenberg
+DESC The current status and plan on how to support HTTP/3 in curl.
+ENDOFVIDEO
+
+VIDEO HTTP/3 in curl
+URL https://youtu.be/dKT3vlIw6bQ
+THUMB http3-in-curl.jpg
+THUMBSIZE width="250" height="140"
+DURATION 2h18 minutes
+DATE 2019-08-14
+WHO Daniel Stenberg
+DESC How to do, build and use HTTP/3 with curl
+ENDOFVIDEO
+
+VIDEO Curl runs in all your devices
+URL https://engage.vevent.com/rt/ida/log_thru.jsp?seid=7955&standaloneparam=BU13Txi2YzQaLFHTQ6D57E7YLSp5yDr2EM6bGH7RcRfgo6Qy9O7va4TcwMAXEbqpoN-26Cv9r1EXK7Pzgr5oG3rOQXOpXleUrN1P5G5kCsY
+THUMB curl-driving-it-2019.jpg
+THUMBSIZE width="250" height="141"
+DATE 2019-11-01
+SLIDES curl-driving-it-2019.pdf
+DURATION 52 minutes
+EVENT Driving IT 2019
+WHO Daniel Stenberg
+DESC From a few hundred lines of code in the 90s, to running in all Internet-connected devices on the globe. This is the story of how curl conquered the world.
+ENDOFVIDEO
+
+VIDEO --help me if you can
+EVENT curl-up 2020
+URL https://curl.se/video/curlup-2020/help%2520me%2520if%2520you%2520can.webm
+SLIDES https://curl.se/video/curlup-2020/help%2520me%2520if%2520you%2520can.pdf
+THUMB help-me-if-you-can-2020.jpg
+THUMBSIZE width="250" height="188"
+DURATION 26 minutes
+DATE 2020-05-09
+WHO Dan Fandrich
+TAGS curl, command line, UI, help, documentation
+DESC Helping people find what they need from hundreds of command-line options.
+ENDOFVIDEO
+
+VIDEO 5 years of libcurl bindings for R
+EVENT curl-up 2020
+URL https://www.youtube.com/watch?v=jGv5pugYpN0
+THUMB libcurl-for-r.jpg
+THUMBSIZE width="250" height="140"
+DURATION 22 minutes
+DATE 2020-05-08
+WHO Jeroen Ooms
+DESC 5 years of libcurl bindings for R
+ENDOFVIDEO
+
+VIDEO curl-docker
+EVENT curl-up 2020
+URL https://youtu.be/ccM7CrkNBpY
+THUMB curl-docker.jpg
+THUMBSIZE width="250" height="140"
+DURATION 22 minutes
+DATE 2020-05-08
+WHO James Fuller
+DESC Presentation on the official curl docker image (http://github.com/curl/curl-docker).
+ENDOFVIDEO
+
+VIDEO HTTP/3 in curl
+EVENT curl-up 2020
+URL https://youtu.be/nk1cxGwMrUk
+SLIDES https://www.slideshare.net/bagder/http3-in-curl-2020
+THUMB http3-in-curl-2020.jpg
+THUMBSIZE width="250" height="140"
+DURATION 56 minutes
+DATE 2020-05-05
+WHO Daniel Stenberg
+DESC How to do, build and use HTTP/3 with curl
+ENDOFVIDEO
+
+VIDEO The state of curl 2020
+EVENT curl-up 2020
+URL https://youtu.be/6ueyZGhtj1Q
+THUMB the-state-of-curl-2020.jpg
+THUMBSIZE width="250" height="141"
+DATE 2020-04-30
+SLIDES the-state-of-curl-2020.pdf
+DURATION 1h53
+WHO Daniel Stenberg
+DESC The state of the curl project 2020. Stats, numbers and status checks.
+ENDOFVIDEO
+
+VIDEO Landing code in curl
+EVENT wolfSSL webinar
+URL https://youtu.be/QmZ3W1d6LQI
+THUMB landing-code.jpg
+THUMBSIZE width="250" height="140"
+DATE 2020-08-13
+SLIDES https://www.slideshare.net/bagder/landing-code-in-curl
+DURATION 54 minutes
+WHO Daniel Stenberg
+DESC How to get your first code contribution merged into the curl code repository
+ENDOFVIDEO
+
+VIDEO Common mistakes when using libcurl
+EVENT wolfSSL webinar
+URL https://youtu.be/0KfDdIAirSI
+THUMB common-libcurl-mistakes.jpg
+THUMBSIZE width="250" height="140"
+DATE 2020-05-07
+SLIDES https://www.slideshare.net/bagder/common-mistakes-when-using-libcurl
+DURATION 1h2
+WHO Daniel Stenberg
+DESC Common mistakes users and application authors make when using libcurl
+ENDOFVIDEO
+
+VIDEO Testing curl for security
+EVENT wolfSSL webinar
+URL https://youtu.be/t12Z9dBlfMk
+THUMB testing-for-security.jpg
+THUMBSIZE width="250" height="141"
+DATE 2020-07-02
+SLIDES https://www.slideshare.net/bagder/testing-curl-for-security
+DURATION 45 minutes
+WHO Daniel Stenberg
+DESC How we develop secure and safe software in the curl project
+ENDOFVIDEO

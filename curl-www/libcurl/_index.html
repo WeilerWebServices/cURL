@@ -1,0 +1,72 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>libcurl - the multiprotocol file transfer library</TITLE>
+#include "css.t"
+<meta name="description" content="libcurl is a free and easy-to-use client-side URL transfer library, supporting DICT, FILE, FTP, FTPS, Gopher, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, Telnet and TFTP. libcurl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, kerberos, HTTP form based upload, proxies, cookies, user+password authentication, file transfer resume, http proxy tunneling and more">
+</HEAD>
+
+#define LIBCURL_MAIN
+#define CURL_URL libcurl
+
+#include "setup.t"
+#include "_menu.html"
+
+WHERE1(libcurl overview)
+
+TITLE(libcurl - the multiprotocol file transfer library)
+<p>
+ libcurl is a <a href="/docs/copyright.html" title="free as in both free
+ speech and zero price!">free</a> and easy-to-use client-side URL transfer
+ library, supporting DICT, FILE, FTP, FTPS, Gopher, HTTP, HTTPS, IMAP, IMAPS,
+ LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMTP, SMTPS,
+ Telnet and TFTP. libcurl supports SSL certificates, HTTP POST, HTTP PUT, FTP
+ uploading, HTTP form based upload, proxies, cookies, user+password
+ authentication (Basic, Digest, NTLM, Negotiate, Kerberos), file transfer
+ resume, http proxy tunneling and more!
+</p>
+
+<p>
+ libcurl is highly portable, it builds and works identically on numerous
+ platforms, including Solaris, NetBSD, FreeBSD, OpenBSD, Darwin, HPUX, IRIX,
+ AIX, Tru64, Linux, UnixWare, HURD, Windows, Amiga, OS/2, BeOs, Mac OS X,
+ Ultrix, QNX, OpenVMS, RISC OS, Novell NetWare, DOS and more...
+</p>
+
+<p>
+ libcurl is <a href="/docs/copyright.html">free</a>, <a
+ href="features.html#thread">thread-safe</a>, <a
+ href="features.html#ipv6">IPv6 compatible</a>, <a
+ href="features.html#features">feature rich</a>, <a
+ href="features.html#support">well supported</a>, <a
+ href="features.html#fast">fast</a>, <a href="features.html#docs">thoroughly
+ documented</a> and is already used by many known, big and successful <a
+ href="/docs/companies.html">companies</a>.
+</p>
+
+<p><b>Download</b>
+<p>
+ Go to the regular curl <a href="/download.html">download page</a> and get the
+ latest curl package, or one of the specific libcurl packages listed.
+
+<p><b>API</b>
+<p>
+ You use libcurl with the provided <a href="c/">C API</a>. The curl team works
+ hard to keep the <a href="features.html#stableapi">API and ABI stable</a>.
+ If you prefer using libcurl from your other favorite language, chances are
+ there's already a <a href="bindings.html">binding</a> written for it.
+
+<p><b>Howto</b>
+<p>
+ Check out our <a href="using/">using libcurl</a> page for general hints and
+ advice, the <a href="competitors.html">free HTTP client library
+ comparison</a>.  or read the comparisons against <a
+ href="libwww.html">libwww</a> and <a href="wininet.html">WinInet</a>.
+
+<p>
+ libcurl is probably the most portable, most powerful and most often used
+ network transfer library on this planet.
+
+#include "_footer.html"
+
+</BODY>
+</HTML>

@@ -1,0 +1,28 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>libcurl - curl_easy_strerror()</TITLE>
+#include "css.t"
+#include "manpage.t"
+</HEAD>
+
+#define RAW_FILE curl_easy_strerror.3
+#define BUG_TITLE curl_easy_strerror%20man%20page:
+#define MENU_EASY
+#define LIBCURL_DOCS
+#define DOCS_EASY_STRERROR
+#define CURL_URL libcurl/c/curl_easy_strerror.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(libcurl, "/libcurl/", API, "/libcurl/c/", curl_easy_strerror)
+
+TITLE(curl_easy_strerror - return string for error code)
+#include "libcurl-related.t"
+#include "curl_easy_strerror.gen"
+#include "_footer.html"
+
+</BODY>
+</HTML>
+
+

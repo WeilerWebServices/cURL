@@ -1,0 +1,17 @@
+#include "_doctype.html"
+#define CURL_MAIL
+<head>
+<title>%l Index %s</title>
+#include "css.t"
+</head>
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE2(Mailing Lists, "/mail/", %l)
+
+#include "support.t"
+
+TITLE(%l Archives)
+<p>
+<div>

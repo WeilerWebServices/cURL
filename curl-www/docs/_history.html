@@ -1,0 +1,29 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - History</TITLE>
+#include "css.t"
+</HEAD>
+
+#define CURL_DOCS
+#define PROJ_DOCS
+#define DOCS_HISTORY
+#define CURL_URL docs/history.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(Docs, "/docs/", Project, "/docs/projdocs.html", History of curl)
+
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="/changes.html">Changelog</a>
+<br><a href="todo.html">TODO</a>
+</div>
+
+#include "history.gen"
+
+#include "_footer.html"
+
+</BODY>
+</HTML>
+

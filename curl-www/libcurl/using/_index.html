@@ -1,0 +1,66 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>using libcurl</TITLE>
+#include "css.t"
+</HEAD>
+
+#define LIBCURL_USING
+#define USING_INDEX
+#define CURL_URL libcurl/using
+
+#include "setup.t"
+#include "_menu.html"
+
+WHERE2(libcurl, "/libcurl/", Using libcurl)
+
+TITLE(using libcurl)
+<p>
+ General hints and suggestions to consider when using libcurl in your
+ applications are gathered here.
+<ul>
+<li> Language-specific docs are found on the <a
+ href="../">libcurl front page</a>
+<li> Check the full guide to the <a href="../c/">C API</a>
+<li> Learn from our collection of <a href="../c/example.html">source code examples</a>
+</ul>
+
+<p>
+ Our suggested way on <a href="autoconf.html">how to write autoconf to find
+ libcurl</a>.
+
+TITLE(curl-config is our friend)
+<p>
+ Applications (or actually whoever) that want to find out about the libcurl
+ installation on a particular host, will find a friend in the <a
+ href="curl-config.html">curl-config</a> tool. (Added in the curl 7.7.2
+ release.)
+
+<p>
+ <i>What compiler flags do I need to compile libcurl using source code?</i>
+<pre>
+ curl-config --cflags
+</pre>
+
+<p>
+ <i>What linker options do I need when I link with libcurl?</i>
+<pre>
+ curl-config --libs
+</pre>
+
+<p>
+ <i>How do I know if libcurl was built with SSL support?</i>
+<pre>
+ curl-config --feature | grep SSL
+</pre>
+
+<p>
+ <i>What's the installed libcurl version?</i>
+<pre>
+ curl-config --version
+</pre>
+
+#include "_footer.html"
+
+</BODY>
+</HTML>
+

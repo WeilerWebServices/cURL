@@ -1,0 +1,166 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - External Dependencies</TITLE>
+#include "css.t"
+</HEAD>
+
+#define CURL_DOCS
+#define PROJ_DOCS
+#define DOCS_LIBS
+#define CURL_URL docs/libs.html
+
+#include "docs/_menu.html"
+#include "setup.t"
+
+WHERE3(Docs, "/docs/", Project, "/docs/projdocs.html", Dependencies)
+
+TITLE(Dependencies)
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="/libcurl/relatedlibs.html">Related Libs</a>
+<br><a href="/libcurl/competitors.html">libcurl competitors</a>
+</div>
+<p>
+ Curl depends on external libraries for some features
+ (and <a href="/libcurl/">libcurl</a> for all features). You can build curl
+ without them, but curl gets a lot better if you have a few of these
+ libraries:
+<p>
+<table cellpadding="4" cellspacing="0">
+
+<tr class="tabletop"><th>Library</th><th>Used for...</th></tr>
+
+<tr class="even">
+<td>
+  <a href="https://www.openssl.org">OpenSSL</a>
+</td>
+<td>
+  TLS (https) support
+</td>
+</tr>
+
+<tr class="odd">
+<td>
+  <a href="https://zlib.net/">zlib</a>
+</td>
+<td>
+  The automatic "deflate" decompression
+</td>
+</tr>
+
+<tr class="even">
+<td>
+  <a href="https://www.openldap.org/">OpenLDAP</a>
+</td>
+<td>
+  LDAP support
+</td>
+</tr>
+
+<tr class="odd">
+<td>
+  <a href="https://tls.mbed.org">mbed TLS</a>
+</td>
+<td>
+   TLS (https) support
+</td>
+</tr>
+
+<tr class="even">
+<td>
+  <a href="https://www.h5l.org">heimdal</a>
+</td>
+<td>
+  Support for GSS-API can be provided by the heimdal package and is used to
+  for provide the Kerberos and SPNEGO authentication in libcurl.
+</td>
+</tr>
+
+<tr class="odd">
+<td>
+  <a href="https://web.mit.edu/kerberos/">MIT Kerberos</a>
+</td>
+<td>
+  The MIT Kerberos package is also a GSS-API library which can be used to
+  provide support for the Kerberos and SPNEGO authentication in libcurl.
+</td>
+</tr>
+
+<tr class="even">
+<td>
+  <a href="https://nghttp2.org/">nghttp2</a>
+</td>
+<td>
+  For http2 support.
+</td>
+</tr>
+
+<tr class="odd">
+<td>
+  <a href="https://daniel.haxx.se/projects/c-ares/">c-ares</a>
+</td>
+<td>
+  For asynchronous name resolves.
+</td>
+</tr>
+
+<tr class="even">
+<td>
+  <a href="https://www.gnu.org/software/libidn/">libidn</a>
+</td>
+<td>
+  For performing the proper IDNA encodings for international domain names to work.
+</td>
+</tr>
+
+<tr class="odd">
+<td>
+  <a href="https://www.gnutls.org/">GnuTLS</a>
+</td>
+
+<td>
+  TLS (https) support.
+</td>
+</tr>
+
+<tr class="even">
+<td> <a
+href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS">NSS</a> </td>
+
+<td>
+  TLS (https) support.
+</td>
+</tr>
+
+<tr class="odd">
+<td>
+  <a href="https://www.wolfssl.com/">wolfSSL</a>
+</td>
+<td>
+  TLS (https) support.
+</td>
+</tr>
+
+<tr class="even">
+<td>
+  <a href="https://www.libssh2.org/">libssh2</a>
+</td>
+<td>
+  For SCP and SFTP support.
+</td>
+</tr>
+
+<tr class="odd">
+<td>
+  <a href="https://launchpad.net/libmetalink">libmetalink</a>
+</td>
+<td>
+  For Metalink support.
+</td>
+</tr>
+
+</table>
+
+#include "_footer.html"
+</BODY>
+</HTML>

@@ -1,0 +1,44 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>curl - Release Table</TITLE>
+#include "css.t"
+#include "manpage.t"
+</HEAD>
+
+#define CURL_DOCS
+#define REL_DOCS
+#define DOCS_RELEASES
+#define CURL_URL docs/releases.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(Docs, "/docs/", Releases, "/docs/reldocs.html", Release Table)
+
+TITLE(curl releases)
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="security.html">Security problems</a>
+<br><a href="manual.html">Manual</a>
+<br><a href="faq.html">FAQ</a>
+<br><a href="/changes.html">Changelog</a>
+<br><a href="vulnerabilities.html">Vulnerabilities</a>
+</div>
+<p>
+  This table displays curl versions and some stats for each release.
+
+<p>
+  Each release has <b>Days</b>, <b>Bugfixes</b> and <b>Changes</b> columns
+  expressed as both <b>Delta</b> (the change from the previous release) and as
+  <b>Accumulated</b> (adding up all the numbers).
+<p>
+ <b>#</b> is the release number from the dawn of time. <b>Vulns</b> is the
+ number of published vulnerabilities for that release.
+
+#include "rel.gen"
+
+<p>
+ All this data, as a <a href="releases.csv">raw CSV</a>
+
+#include "_footer.html"
+</body> </html>

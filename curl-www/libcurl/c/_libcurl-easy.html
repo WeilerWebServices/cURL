@@ -1,0 +1,31 @@
+#include "_doctype.html"
+<HTML>
+<HEAD> <TITLE>libcurl - easy interface overview</TITLE>
+#include "css.t"
+#include "manpage.t"
+</HEAD>
+
+#define MENU_EASY
+#define LIBCURL_DOCS
+#define DOCS_OVERVIEW_EASY
+#define CURL_URL libcurl/c/libcurl-easy.html
+
+#include "_menu.html"
+#include "setup.t"
+
+WHERE3(libcurl, "/libcurl/", API, "/libcurl/c/", Easy interface)
+
+TITLE(Easy interface overview)
+<div class="relatedbox">
+<b>Related:</b>
+<br><a href="easy_setopt_options.html">curl_easy_setopt options</a>
+<br><a href="easy_getinfo_options.html">curl_easy_getinfo options</a>
+<br><a href="./">API</a>
+</div>
+#include "libcurl-easy.gen"
+#include "_footer.html"
+
+</BODY>
+</HTML>
+
+
